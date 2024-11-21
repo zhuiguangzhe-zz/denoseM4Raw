@@ -1,0 +1,65 @@
+2024-11-20 09:29:55,448 [INFO ]  Logging file is ./M4RawV1.0_experiment/train_masa/20241120_092955.log
+2024-11-20 09:29:55,449 [INFO ]  random_seed:0
+2024-11-20 09:29:55,449 [INFO ]  name:train_masa
+2024-11-20 09:29:55,449 [INFO ]  phase:train
+2024-11-20 09:29:55,449 [INFO ]  gpu_ids:[1]
+2024-11-20 09:29:55,449 [INFO ]  launcher:none
+2024-11-20 09:29:55,449 [INFO ]  local_rank:0
+2024-11-20 09:29:55,449 [INFO ]  net_name:RESUNET
+2024-11-20 09:29:55,449 [INFO ]  input_nc:1
+2024-11-20 09:29:55,449 [INFO ]  output_nc:1
+2024-11-20 09:29:55,449 [INFO ]  traindata_root:/home/M4Raw-main/data/M4quick_test/M4RawV1.5/M4RawV1.5_multicoil_train/multicoil_train
+2024-11-20 09:29:55,449 [INFO ]  testdata_root:/home/M4Raw-main/data/M4quick_test/M4RawV1.5/M4Raw_multicoil_test/multicoil_test
+2024-11-20 09:29:55,449 [INFO ]  dataset:M4Raw
+2024-11-20 09:29:55,449 [INFO ]  modal:T2
+2024-11-20 09:29:55,449 [INFO ]  val_modal:T2
+2024-11-20 09:29:55,449 [INFO ]  trainset:TrainSet
+2024-11-20 09:29:55,449 [INFO ]  testset:TestSet
+2024-11-20 09:29:55,449 [INFO ]  save_test_root:generated
+2024-11-20 09:29:55,449 [INFO ]  batch_size:32
+2024-11-20 09:29:55,449 [INFO ]  num_workers:9
+2024-11-20 09:29:55,449 [INFO ]  data_augmentation:True
+2024-11-20 09:29:55,449 [INFO ]  image_size:256
+2024-11-20 09:29:55,449 [INFO ]  split_ratio:0.95
+2024-11-20 09:29:55,450 [INFO ]  noise_std_low:0.02
+2024-11-20 09:29:55,450 [INFO ]  noise_std_high:0.06
+2024-11-20 09:29:55,450 [INFO ]  seed:42
+2024-11-20 09:29:55,450 [INFO ]  lr:1e-05
+2024-11-20 09:29:55,450 [INFO ]  lr_D:0.0001
+2024-11-20 09:29:55,450 [INFO ]  weight_decay:0.0001
+2024-11-20 09:29:55,450 [INFO ]  start_iter:0
+2024-11-20 09:29:55,450 [INFO ]  max_iter:50
+2024-11-20 09:29:55,450 [INFO ]  T_max_factor:1
+2024-11-20 09:29:55,450 [INFO ]  eta_min:1e-07
+2024-11-20 09:29:55,450 [INFO ]  loss_l1:False
+2024-11-20 09:29:55,450 [INFO ]  loss_mse:True
+2024-11-20 09:29:55,450 [INFO ]  loss_adv:False
+2024-11-20 09:29:55,450 [INFO ]  gan_type:LSGAN
+2024-11-20 09:29:55,450 [INFO ]  lambda_l1:1
+2024-11-20 09:29:55,450 [INFO ]  lambda_mse:1
+2024-11-20 09:29:55,450 [INFO ]  lambda_perceptual:1
+2024-11-20 09:29:55,450 [INFO ]  lambda_adv:0.005
+2024-11-20 09:29:55,450 [INFO ]  resume:
+2024-11-20 09:29:55,450 [INFO ]  resume_optim:
+2024-11-20 09:29:55,450 [INFO ]  resume_scheduler:
+2024-11-20 09:29:55,450 [INFO ]  log_freq:100
+2024-11-20 09:29:55,450 [INFO ]  vis_freq:50000
+2024-11-20 09:29:55,450 [INFO ]  save_epoch_freq:50
+2024-11-20 09:29:55,451 [INFO ]  test_freq:10
+2024-11-20 09:29:55,451 [INFO ]  save_folder:./M4RawV1.0_experiment/train_masa
+2024-11-20 09:29:55,451 [INFO ]  vis_step_freq:100
+2024-11-20 09:29:55,451 [INFO ]  use_tb_logger:False
+2024-11-20 09:29:55,451 [INFO ]  save_test_results:False
+2024-11-20 09:29:55,451 [INFO ]  dist:False
+2024-11-20 09:29:55,451 [INFO ]  rank:-1
+2024-11-20 09:29:55,451 [INFO ]  vis_save_dir:./M4RawV1.0_experiment/train_masa/vis
+2024-11-20 09:29:55,451 [INFO ]  snapshot_save_dir:./M4RawV1.0_experiment/train_masa/snapshot
+2024-11-20 09:32:17,761 [INFO ]  found 2304 training samples
+2024-11-20 09:33:13,800 [INFO ]  found 450 test/val samples
+2024-11-20 09:33:14,147 [INFO ]  ----- generator parameters: 32.650753 -----
+2024-11-20 09:33:14,148 [INFO ]  init criterion and optimizer...
+2024-11-20 09:33:14,148 [INFO ]    using mse loss...
+2024-11-20 09:33:14,149 [INFO ]  training on  ...M4Raw
+2024-11-20 09:33:14,149 [INFO ]  2304 training samples
+2024-11-20 09:33:14,149 [INFO ]  the init lr: 0.000010
+2024-11-20 09:33:14,150 [INFO ]  current_lr: 0.000010

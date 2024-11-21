@@ -1,0 +1,23 @@
+2024-11-21 11:05:57,467 [INFO ]  Logging file is ./test_results/TestSet/test_masa_rec_TestSet_multi/20241121_110557.log
+2024-11-21 11:05:57,468 [INFO ]  random_seed:0
+2024-11-21 11:05:57,468 [INFO ]  name:test_masa_rec_TestSet_multi
+2024-11-21 11:05:57,468 [INFO ]  phase:test
+2024-11-21 11:05:57,468 [INFO ]  gpu_ids:[1]
+2024-11-21 11:05:57,468 [INFO ]  launcher:none
+2024-11-21 11:05:57,468 [INFO ]  local_rank:0
+2024-11-21 11:05:57,468 [INFO ]  net_name:UNET
+2024-11-21 11:05:57,468 [INFO ]  input_nc:1
+2024-11-21 11:05:57,468 [INFO ]  output_nc:1
+2024-11-21 11:05:57,468 [INFO ]  testdata_root:/home/M4Raw-main/data/M4quick_test/M4RawV1.5/M4RawV1.5_multicoil_val/multicoil_val
+2024-11-21 11:05:57,468 [INFO ]  dataset:M4Raw
+2024-11-21 11:05:57,468 [INFO ]  modal:T2
+2024-11-21 11:05:57,468 [INFO ]  val_modal:T2
+2024-11-21 11:05:57,468 [INFO ]  batch_size:1
+2024-11-21 11:05:57,468 [INFO ]  num_workers:4
+2024-11-21 11:05:57,469 [INFO ]  data_augmentation:False
+2024-11-21 11:05:57,469 [INFO ]  resume:/home/M4Raw-main/denoising_demo/M4RawV1.0_experiment/train_masa/snapshot/net_best.pth
+2024-11-21 11:05:57,469 [INFO ]  testset:TestSet
+2024-11-21 11:05:57,469 [INFO ]  save_folder:./test_results/TestSet/test_masa_rec_TestSet_multi
+2024-11-21 11:05:57,469 [INFO ]  dist:False
+2024-11-21 11:05:57,469 [INFO ]  rank:-1
+2024-11-21 11:08:02,281 [INFO ]  found 540 test/val samples

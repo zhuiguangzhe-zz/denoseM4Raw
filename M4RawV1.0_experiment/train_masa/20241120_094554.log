@@ -1,0 +1,207 @@
+2024-11-20 09:45:54,855 [INFO ]  Logging file is ./M4RawV1.0_experiment/train_masa/20241120_094554.log
+2024-11-20 09:45:54,855 [INFO ]  random_seed:0
+2024-11-20 09:45:54,855 [INFO ]  name:train_masa
+2024-11-20 09:45:54,855 [INFO ]  phase:train
+2024-11-20 09:45:54,855 [INFO ]  gpu_ids:[1]
+2024-11-20 09:45:54,855 [INFO ]  launcher:none
+2024-11-20 09:45:54,855 [INFO ]  local_rank:0
+2024-11-20 09:45:54,855 [INFO ]  net_name:RESUNET
+2024-11-20 09:45:54,855 [INFO ]  input_nc:1
+2024-11-20 09:45:54,855 [INFO ]  output_nc:1
+2024-11-20 09:45:54,855 [INFO ]  traindata_root:/home/M4Raw-main/data/M4quick_test/M4RawV1.5/M4RawV1.5_multicoil_train/multicoil_train
+2024-11-20 09:45:54,856 [INFO ]  testdata_root:/home/M4Raw-main/data/M4quick_test/M4RawV1.5/M4Raw_multicoil_test/multicoil_test
+2024-11-20 09:45:54,856 [INFO ]  dataset:M4Raw
+2024-11-20 09:45:54,856 [INFO ]  modal:T2
+2024-11-20 09:45:54,856 [INFO ]  val_modal:T2
+2024-11-20 09:45:54,856 [INFO ]  trainset:TrainSet
+2024-11-20 09:45:54,856 [INFO ]  testset:TestSet
+2024-11-20 09:45:54,856 [INFO ]  save_test_root:generated
+2024-11-20 09:45:54,856 [INFO ]  batch_size:32
+2024-11-20 09:45:54,856 [INFO ]  num_workers:9
+2024-11-20 09:45:54,856 [INFO ]  data_augmentation:True
+2024-11-20 09:45:54,856 [INFO ]  image_size:256
+2024-11-20 09:45:54,856 [INFO ]  split_ratio:0.95
+2024-11-20 09:45:54,856 [INFO ]  noise_std_low:0.02
+2024-11-20 09:45:54,856 [INFO ]  noise_std_high:0.06
+2024-11-20 09:45:54,856 [INFO ]  seed:42
+2024-11-20 09:45:54,856 [INFO ]  lr:1e-05
+2024-11-20 09:45:54,856 [INFO ]  lr_D:0.0001
+2024-11-20 09:45:54,856 [INFO ]  weight_decay:0.0001
+2024-11-20 09:45:54,857 [INFO ]  start_iter:0
+2024-11-20 09:45:54,857 [INFO ]  max_iter:50
+2024-11-20 09:45:54,857 [INFO ]  T_max_factor:1
+2024-11-20 09:45:54,857 [INFO ]  eta_min:1e-07
+2024-11-20 09:45:54,857 [INFO ]  loss_l1:False
+2024-11-20 09:45:54,857 [INFO ]  loss_mse:True
+2024-11-20 09:45:54,857 [INFO ]  loss_adv:False
+2024-11-20 09:45:54,857 [INFO ]  gan_type:LSGAN
+2024-11-20 09:45:54,857 [INFO ]  lambda_l1:1
+2024-11-20 09:45:54,857 [INFO ]  lambda_mse:1
+2024-11-20 09:45:54,857 [INFO ]  lambda_perceptual:1
+2024-11-20 09:45:54,857 [INFO ]  lambda_adv:0.005
+2024-11-20 09:45:54,857 [INFO ]  resume:
+2024-11-20 09:45:54,857 [INFO ]  resume_optim:
+2024-11-20 09:45:54,857 [INFO ]  resume_scheduler:
+2024-11-20 09:45:54,857 [INFO ]  log_freq:100
+2024-11-20 09:45:54,857 [INFO ]  vis_freq:50000
+2024-11-20 09:45:54,857 [INFO ]  save_epoch_freq:50
+2024-11-20 09:45:54,857 [INFO ]  test_freq:10
+2024-11-20 09:45:54,858 [INFO ]  save_folder:./M4RawV1.0_experiment/train_masa
+2024-11-20 09:45:54,858 [INFO ]  vis_step_freq:100
+2024-11-20 09:45:54,858 [INFO ]  use_tb_logger:False
+2024-11-20 09:45:54,858 [INFO ]  save_test_results:False
+2024-11-20 09:45:54,858 [INFO ]  dist:False
+2024-11-20 09:45:54,858 [INFO ]  rank:-1
+2024-11-20 09:45:54,858 [INFO ]  vis_save_dir:./M4RawV1.0_experiment/train_masa/vis
+2024-11-20 09:45:54,858 [INFO ]  snapshot_save_dir:./M4RawV1.0_experiment/train_masa/snapshot
+2024-11-20 09:48:17,749 [INFO ]  found 2304 training samples
+2024-11-20 09:49:13,525 [INFO ]  found 450 test/val samples
+2024-11-20 09:49:13,860 [INFO ]  ----- generator parameters: 32.650753 -----
+2024-11-20 09:49:13,860 [INFO ]  init criterion and optimizer...
+2024-11-20 09:49:13,860 [INFO ]    using mse loss...
+2024-11-20 09:49:13,861 [INFO ]  training on  ...M4Raw
+2024-11-20 09:49:13,861 [INFO ]  2304 training samples
+2024-11-20 09:49:13,861 [INFO ]  the init lr: 0.000010
+2024-11-20 09:49:13,862 [INFO ]  current_lr: 0.000010
+2024-11-20 09:49:20,082 [INFO ]  epoch:000 step:0000  mse_loss:0.012000 loss_sum:0.012000 aug:False 0.062195s/batch
+2024-11-20 09:50:36,757 [INFO ]  current_lr: 0.000010
+2024-11-20 09:50:37,787 [INFO ]  epoch:001 step:0000  mse_loss:0.000744 loss_sum:0.000744 aug:False 0.010293s/batch
+2024-11-20 09:51:55,995 [INFO ]  current_lr: 0.000010
+2024-11-20 09:51:57,027 [INFO ]  epoch:002 step:0000  mse_loss:0.000611 loss_sum:0.000611 aug:False 0.010308s/batch
+2024-11-20 09:53:15,646 [INFO ]  current_lr: 0.000010
+2024-11-20 09:53:16,677 [INFO ]  epoch:003 step:0000  mse_loss:0.000617 loss_sum:0.000617 aug:False 0.010296s/batch
+2024-11-20 09:54:35,307 [INFO ]  current_lr: 0.000010
+2024-11-20 09:54:36,333 [INFO ]  epoch:004 step:0000  mse_loss:0.000576 loss_sum:0.000576 aug:False 0.010261s/batch
+2024-11-20 09:55:55,136 [INFO ]  current_lr: 0.000010
+2024-11-20 09:55:56,186 [INFO ]  epoch:005 step:0000  mse_loss:0.000571 loss_sum:0.000571 aug:False 0.010482s/batch
+2024-11-20 09:57:17,991 [INFO ]  current_lr: 0.000010
+2024-11-20 09:57:19,328 [INFO ]  epoch:006 step:0000  mse_loss:0.000557 loss_sum:0.000557 aug:False 0.013360s/batch
+2024-11-20 09:58:39,706 [INFO ]  current_lr: 0.000009
+2024-11-20 09:58:40,735 [INFO ]  epoch:007 step:0000  mse_loss:0.000551 loss_sum:0.000551 aug:False 0.010283s/batch
+2024-11-20 10:00:00,493 [INFO ]  current_lr: 0.000009
+2024-11-20 10:00:01,531 [INFO ]  epoch:008 step:0000  mse_loss:0.000542 loss_sum:0.000542 aug:False 0.010363s/batch
+2024-11-20 10:01:21,313 [INFO ]  current_lr: 0.000009
+2024-11-20 10:01:22,360 [INFO ]  epoch:009 step:0000  mse_loss:0.000541 loss_sum:0.000541 aug:False 0.010465s/batch
+2024-11-20 10:02:42,078 [INFO ]  start testing...
+2024-11-20 10:02:42,079 [INFO ]  450 testing samples
+2024-11-20 10:02:52,188 [INFO ]  Mean: psnr:32.296881   ssim:0.812227 
+2024-11-20 10:02:52,188 [INFO ]  Std : psnr:0.982627   ssim:0.019311 
+2024-11-20 10:02:52,189 [INFO ]  best_psnr was:0.000000  at epoch: -1
+2024-11-20 10:02:52,189 [INFO ]  new best SNR
+2024-11-20 10:02:52,189 [INFO ]  best_psnr:32.296881 
+2024-11-20 10:02:52,189 [INFO ]  Saving state, epoch: 9 iter:0
+2024-11-20 10:02:54,654 [INFO ]  current_lr: 0.000009
+2024-11-20 10:02:55,833 [INFO ]  epoch:010 step:0000  mse_loss:0.000566 loss_sum:0.000566 aug:False 0.011782s/batch
+2024-11-20 10:04:14,398 [INFO ]  current_lr: 0.000009
+2024-11-20 10:04:15,428 [INFO ]  epoch:011 step:0000  mse_loss:0.000542 loss_sum:0.000542 aug:False 0.010292s/batch
+2024-11-20 10:05:34,152 [INFO ]  current_lr: 0.000008
+2024-11-20 10:05:35,187 [INFO ]  epoch:012 step:0000  mse_loss:0.000535 loss_sum:0.000535 aug:False 0.010345s/batch
+2024-11-20 10:06:54,000 [INFO ]  current_lr: 0.000008
+2024-11-20 10:06:55,022 [INFO ]  epoch:013 step:0000  mse_loss:0.000571 loss_sum:0.000571 aug:False 0.010221s/batch
+2024-11-20 10:08:13,770 [INFO ]  current_lr: 0.000008
+2024-11-20 10:08:14,792 [INFO ]  epoch:014 step:0000  mse_loss:0.000528 loss_sum:0.000528 aug:False 0.010221s/batch
+2024-11-20 10:09:33,565 [INFO ]  current_lr: 0.000008
+2024-11-20 10:09:34,602 [INFO ]  epoch:015 step:0000  mse_loss:0.000479 loss_sum:0.000479 aug:False 0.010355s/batch
+2024-11-20 10:10:53,357 [INFO ]  current_lr: 0.000007
+2024-11-20 10:10:54,368 [INFO ]  epoch:016 step:0000  mse_loss:0.000511 loss_sum:0.000511 aug:False 0.010112s/batch
+2024-11-20 10:12:13,021 [INFO ]  current_lr: 0.000007
+2024-11-20 10:12:14,105 [INFO ]  epoch:017 step:0000  mse_loss:0.000525 loss_sum:0.000525 aug:False 0.010833s/batch
+2024-11-20 10:13:32,807 [INFO ]  current_lr: 0.000007
+2024-11-20 10:13:33,922 [INFO ]  epoch:018 step:0000  mse_loss:0.000498 loss_sum:0.000498 aug:False 0.011144s/batch
+2024-11-20 10:14:52,647 [INFO ]  current_lr: 0.000007
+2024-11-20 10:14:53,663 [INFO ]  epoch:019 step:0000  mse_loss:0.000507 loss_sum:0.000507 aug:False 0.010157s/batch
+2024-11-20 10:16:12,385 [INFO ]  start testing...
+2024-11-20 10:16:12,385 [INFO ]  450 testing samples
+2024-11-20 10:16:22,560 [INFO ]  Mean: psnr:32.920578   ssim:0.832928 
+2024-11-20 10:16:22,561 [INFO ]  Std : psnr:1.026344   ssim:0.017993 
+2024-11-20 10:16:22,561 [INFO ]  best_psnr was:32.296881  at epoch: 9
+2024-11-20 10:16:22,561 [INFO ]  new best SNR
+2024-11-20 10:16:22,561 [INFO ]  best_psnr:32.920578 
+2024-11-20 10:16:22,561 [INFO ]  Saving state, epoch: 19 iter:0
+2024-11-20 10:16:25,148 [INFO ]  current_lr: 0.000006
+2024-11-20 10:16:26,303 [INFO ]  epoch:020 step:0000  mse_loss:0.000506 loss_sum:0.000506 aug:False 0.011546s/batch
+2024-11-20 10:17:45,029 [INFO ]  current_lr: 0.000006
+2024-11-20 10:17:46,107 [INFO ]  epoch:021 step:0000  mse_loss:0.000443 loss_sum:0.000443 aug:False 0.010780s/batch
+2024-11-20 10:19:04,806 [INFO ]  current_lr: 0.000006
+2024-11-20 10:19:05,844 [INFO ]  epoch:022 step:0000  mse_loss:0.000478 loss_sum:0.000478 aug:False 0.010373s/batch
+2024-11-20 10:20:24,544 [INFO ]  current_lr: 0.000005
+2024-11-20 10:20:25,573 [INFO ]  epoch:023 step:0000  mse_loss:0.000455 loss_sum:0.000455 aug:False 0.010279s/batch
+2024-11-20 10:21:44,324 [INFO ]  current_lr: 0.000005
+2024-11-20 10:21:45,353 [INFO ]  epoch:024 step:0000  mse_loss:0.000506 loss_sum:0.000506 aug:False 0.010288s/batch
+2024-11-20 10:23:04,059 [INFO ]  current_lr: 0.000005
+2024-11-20 10:23:05,108 [INFO ]  epoch:025 step:0000  mse_loss:0.000459 loss_sum:0.000459 aug:False 0.010486s/batch
+2024-11-20 10:24:23,855 [INFO ]  current_lr: 0.000004
+2024-11-20 10:24:24,925 [INFO ]  epoch:026 step:0000  mse_loss:0.000471 loss_sum:0.000471 aug:False 0.010694s/batch
+2024-11-20 10:25:43,695 [INFO ]  current_lr: 0.000004
+2024-11-20 10:25:44,721 [INFO ]  epoch:027 step:0000  mse_loss:0.000436 loss_sum:0.000436 aug:False 0.010249s/batch
+2024-11-20 10:27:03,504 [INFO ]  current_lr: 0.000004
+2024-11-20 10:27:04,587 [INFO ]  epoch:028 step:0000  mse_loss:0.000501 loss_sum:0.000501 aug:False 0.010822s/batch
+2024-11-20 10:28:23,364 [INFO ]  current_lr: 0.000004
+2024-11-20 10:28:24,476 [INFO ]  epoch:029 step:0000  mse_loss:0.000479 loss_sum:0.000479 aug:False 0.011109s/batch
+2024-11-20 10:29:43,186 [INFO ]  start testing...
+2024-11-20 10:29:43,186 [INFO ]  450 testing samples
+2024-11-20 10:29:52,819 [INFO ]  Mean: psnr:33.140588   ssim:0.840043 
+2024-11-20 10:29:52,820 [INFO ]  Std : psnr:1.042336   ssim:0.017514 
+2024-11-20 10:29:52,820 [INFO ]  best_psnr was:32.920578  at epoch: 19
+2024-11-20 10:29:52,820 [INFO ]  new best SNR
+2024-11-20 10:29:52,820 [INFO ]  best_psnr:33.140588 
+2024-11-20 10:29:52,820 [INFO ]  Saving state, epoch: 29 iter:0
+2024-11-20 10:29:55,360 [INFO ]  current_lr: 0.000003
+2024-11-20 10:29:56,495 [INFO ]  epoch:030 step:0000  mse_loss:0.000483 loss_sum:0.000483 aug:False 0.011341s/batch
+2024-11-20 10:31:15,092 [INFO ]  current_lr: 0.000003
+2024-11-20 10:31:16,204 [INFO ]  epoch:031 step:0000  mse_loss:0.000507 loss_sum:0.000507 aug:False 0.011117s/batch
+2024-11-20 10:32:34,921 [INFO ]  current_lr: 0.000003
+2024-11-20 10:32:35,949 [INFO ]  epoch:032 step:0000  mse_loss:0.000465 loss_sum:0.000465 aug:False 0.010275s/batch
+2024-11-20 10:33:54,636 [INFO ]  current_lr: 0.000002
+2024-11-20 10:33:55,720 [INFO ]  epoch:033 step:0000  mse_loss:0.000459 loss_sum:0.000459 aug:False 0.010839s/batch
+2024-11-20 10:35:14,423 [INFO ]  current_lr: 0.000002
+2024-11-20 10:35:15,514 [INFO ]  epoch:034 step:0000  mse_loss:0.000492 loss_sum:0.000492 aug:False 0.010898s/batch
+2024-11-20 10:36:34,234 [INFO ]  current_lr: 0.000002
+2024-11-20 10:36:35,300 [INFO ]  epoch:035 step:0000  mse_loss:0.000489 loss_sum:0.000489 aug:False 0.010651s/batch
+2024-11-20 10:37:54,065 [INFO ]  current_lr: 0.000002
+2024-11-20 10:37:55,093 [INFO ]  epoch:036 step:0000  mse_loss:0.000466 loss_sum:0.000466 aug:False 0.010274s/batch
+2024-11-20 10:39:13,856 [INFO ]  current_lr: 0.000001
+2024-11-20 10:39:14,883 [INFO ]  epoch:037 step:0000  mse_loss:0.000451 loss_sum:0.000451 aug:False 0.010263s/batch
+2024-11-20 10:40:33,634 [INFO ]  current_lr: 0.000001
+2024-11-20 10:40:34,709 [INFO ]  epoch:038 step:0000  mse_loss:0.000456 loss_sum:0.000456 aug:False 0.010741s/batch
+2024-11-20 10:41:53,472 [INFO ]  current_lr: 0.000001
+2024-11-20 10:41:54,496 [INFO ]  epoch:039 step:0000  mse_loss:0.000478 loss_sum:0.000478 aug:False 0.010242s/batch
+2024-11-20 10:43:13,312 [INFO ]  start testing...
+2024-11-20 10:43:13,313 [INFO ]  450 testing samples
+2024-11-20 10:43:23,257 [INFO ]  Mean: psnr:33.199398   ssim:0.841914 
+2024-11-20 10:43:23,258 [INFO ]  Std : psnr:1.042207   ssim:0.017385 
+2024-11-20 10:43:23,258 [INFO ]  best_psnr was:33.140588  at epoch: 29
+2024-11-20 10:43:23,258 [INFO ]  new best SNR
+2024-11-20 10:43:23,258 [INFO ]  best_psnr:33.199398 
+2024-11-20 10:43:23,258 [INFO ]  Saving state, epoch: 39 iter:0
+2024-11-20 10:43:25,662 [INFO ]  current_lr: 0.000001
+2024-11-20 10:43:26,788 [INFO ]  epoch:040 step:0000  mse_loss:0.000449 loss_sum:0.000449 aug:True 0.011252s/batch
+2024-11-20 10:44:45,489 [INFO ]  current_lr: 0.000001
+2024-11-20 10:44:46,510 [INFO ]  epoch:041 step:0000  mse_loss:0.000460 loss_sum:0.000460 aug:True 0.010202s/batch
+2024-11-20 10:46:05,278 [INFO ]  current_lr: 0.000001
+2024-11-20 10:46:06,310 [INFO ]  epoch:042 step:0000  mse_loss:0.000438 loss_sum:0.000438 aug:True 0.010307s/batch
+2024-11-20 10:47:25,155 [INFO ]  current_lr: 0.000000
+2024-11-20 10:47:26,175 [INFO ]  epoch:043 step:0000  mse_loss:0.000468 loss_sum:0.000468 aug:True 0.010191s/batch
+2024-11-20 10:48:44,939 [INFO ]  current_lr: 0.000000
+2024-11-20 10:48:46,024 [INFO ]  epoch:044 step:0000  mse_loss:0.000528 loss_sum:0.000528 aug:True 0.010838s/batch
+2024-11-20 10:50:04,808 [INFO ]  current_lr: 0.000000
+2024-11-20 10:50:05,873 [INFO ]  epoch:045 step:0000  mse_loss:0.000505 loss_sum:0.000505 aug:True 0.010644s/batch
+2024-11-20 10:51:24,644 [INFO ]  current_lr: 0.000000
+2024-11-20 10:51:25,665 [INFO ]  epoch:046 step:0000  mse_loss:0.000438 loss_sum:0.000438 aug:True 0.010202s/batch
+2024-11-20 10:52:44,467 [INFO ]  current_lr: 0.000000
+2024-11-20 10:52:45,482 [INFO ]  epoch:047 step:0000  mse_loss:0.000469 loss_sum:0.000469 aug:True 0.010145s/batch
+2024-11-20 10:54:04,250 [INFO ]  current_lr: 0.000000
+2024-11-20 10:54:05,321 [INFO ]  epoch:048 step:0000  mse_loss:0.000430 loss_sum:0.000430 aug:True 0.010701s/batch
+2024-11-20 10:55:24,153 [INFO ]  current_lr: 0.000000
+2024-11-20 10:55:25,174 [INFO ]  epoch:049 step:0000  mse_loss:0.000516 loss_sum:0.000516 aug:True 0.010209s/batch
+2024-11-20 10:56:43,971 [INFO ]  Saving state, epoch: 49 iter:0
+2024-11-20 10:56:47,011 [INFO ]  start testing...
+2024-11-20 10:56:47,011 [INFO ]  450 testing samples
+2024-11-20 10:56:56,863 [INFO ]  Mean: psnr:33.208162   ssim:0.842207 
+2024-11-20 10:56:56,863 [INFO ]  Std : psnr:1.043228   ssim:0.017364 
+2024-11-20 10:56:56,863 [INFO ]  best_psnr was:33.199398  at epoch: 39
+2024-11-20 10:56:56,863 [INFO ]  new best SNR
+2024-11-20 10:56:56,864 [INFO ]  best_psnr:33.208162 
+2024-11-20 10:56:56,864 [INFO ]  Saving state, epoch: 49 iter:0
+2024-11-20 10:57:00,176 [INFO ]  The training stage on M4Raw is over!!!
+2024-11-20 10:57:00,176 [INFO ]  best_psnr was:33.208162  at epoch: 49

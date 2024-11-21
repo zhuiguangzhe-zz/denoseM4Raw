@@ -1,0 +1,1332 @@
+2024-11-19 09:23:55,851 [INFO ]  Logging file is ./M4RawV1.0_experiment/train_masa/20241119_092355.log
+2024-11-19 09:23:55,851 [INFO ]  random_seed:0
+2024-11-19 09:23:55,852 [INFO ]  name:train_masa
+2024-11-19 09:23:55,852 [INFO ]  phase:train
+2024-11-19 09:23:55,852 [INFO ]  gpu_ids:[0]
+2024-11-19 09:23:55,852 [INFO ]  launcher:none
+2024-11-19 09:23:55,852 [INFO ]  local_rank:0
+2024-11-19 09:23:55,852 [INFO ]  net_name:RESUNET
+2024-11-19 09:23:55,852 [INFO ]  input_nc:1
+2024-11-19 09:23:55,852 [INFO ]  output_nc:1
+2024-11-19 09:23:55,853 [INFO ]  traindata_root:/home/M4Raw-main/data/M4quick_test/M4RawV1.5/M4RawV1.5_multicoil_train/multicoil_train
+2024-11-19 09:23:55,853 [INFO ]  testdata_root:/home/M4Raw-main/data/M4quick_test/M4RawV1.5/M4Raw_multicoil_test/multicoil_test
+2024-11-19 09:23:55,853 [INFO ]  dataset:M4Raw
+2024-11-19 09:23:55,853 [INFO ]  modal:T1
+2024-11-19 09:23:55,853 [INFO ]  val_modal:T1
+2024-11-19 09:23:55,853 [INFO ]  trainset:TrainSet
+2024-11-19 09:23:55,853 [INFO ]  testset:TestSet
+2024-11-19 09:23:55,853 [INFO ]  save_test_root:generated
+2024-11-19 09:23:55,854 [INFO ]  batch_size:32
+2024-11-19 09:23:55,854 [INFO ]  num_workers:9
+2024-11-19 09:23:55,854 [INFO ]  data_augmentation:False
+2024-11-19 09:23:55,854 [INFO ]  image_size:256
+2024-11-19 09:23:55,854 [INFO ]  split_ratio:0.95
+2024-11-19 09:23:55,854 [INFO ]  noise_std_low:0.02
+2024-11-19 09:23:55,854 [INFO ]  noise_std_high:0.06
+2024-11-19 09:23:55,854 [INFO ]  seed:42
+2024-11-19 09:23:55,855 [INFO ]  lr:0.0001
+2024-11-19 09:23:55,855 [INFO ]  lr_D:0.0001
+2024-11-19 09:23:55,855 [INFO ]  weight_decay:0
+2024-11-19 09:23:55,855 [INFO ]  start_iter:0
+2024-11-19 09:23:55,855 [INFO ]  max_iter:500
+2024-11-19 09:23:55,855 [INFO ]  T_max_factor:1
+2024-11-19 09:23:55,855 [INFO ]  eta_min:1e-07
+2024-11-19 09:23:55,855 [INFO ]  loss_l1:True
+2024-11-19 09:23:55,855 [INFO ]  loss_mse:False
+2024-11-19 09:23:55,856 [INFO ]  loss_adv:False
+2024-11-19 09:23:55,856 [INFO ]  gan_type:WGAN_GP
+2024-11-19 09:23:55,856 [INFO ]  lambda_l1:1
+2024-11-19 09:23:55,856 [INFO ]  lambda_mse:1
+2024-11-19 09:23:55,856 [INFO ]  lambda_perceptual:1
+2024-11-19 09:23:55,856 [INFO ]  lambda_adv:0.005
+2024-11-19 09:23:55,856 [INFO ]  resume:
+2024-11-19 09:23:55,856 [INFO ]  resume_optim:
+2024-11-19 09:23:55,857 [INFO ]  resume_scheduler:
+2024-11-19 09:23:55,857 [INFO ]  log_freq:100
+2024-11-19 09:23:55,857 [INFO ]  vis_freq:50000
+2024-11-19 09:23:55,857 [INFO ]  save_epoch_freq:50
+2024-11-19 09:23:55,857 [INFO ]  test_freq:10
+2024-11-19 09:23:55,857 [INFO ]  save_folder:./M4RawV1.0_experiment/train_masa
+2024-11-19 09:23:55,857 [INFO ]  vis_step_freq:100
+2024-11-19 09:23:55,857 [INFO ]  use_tb_logger:False
+2024-11-19 09:23:55,858 [INFO ]  save_test_results:False
+2024-11-19 09:23:55,858 [INFO ]  dist:False
+2024-11-19 09:23:55,858 [INFO ]  rank:-1
+2024-11-19 09:23:55,858 [INFO ]  vis_save_dir:./M4RawV1.0_experiment/train_masa/vis
+2024-11-19 09:23:55,858 [INFO ]  snapshot_save_dir:./M4RawV1.0_experiment/train_masa/snapshot
+2024-11-19 09:26:18,840 [INFO ]  found 2304 training samples
+2024-11-19 09:27:19,768 [INFO ]  found 450 test/val samples
+2024-11-19 09:27:20,177 [INFO ]  ----- generator parameters: 32.650753 -----
+2024-11-19 09:27:20,177 [INFO ]  init criterion and optimizer...
+2024-11-19 09:27:20,177 [INFO ]    using l1 loss...
+2024-11-19 09:27:20,178 [INFO ]  training on  ...M4Raw
+2024-11-19 09:27:20,178 [INFO ]  2304 training samples
+2024-11-19 09:27:20,178 [INFO ]  the init lr: 0.000100
+2024-11-19 09:27:20,179 [INFO ]  current_lr: 0.000100
+2024-11-19 09:27:26,059 [INFO ]  epoch:000 step:0000  l1_loss:0.097547 loss_sum:0.097547 aug:False 0.058795s/batch
+2024-11-19 09:28:41,211 [INFO ]  current_lr: 0.000100
+2024-11-19 09:28:42,211 [INFO ]  epoch:001 step:0000  l1_loss:0.014402 loss_sum:0.014402 aug:False 0.009990s/batch
+2024-11-19 09:29:58,718 [INFO ]  current_lr: 0.000100
+2024-11-19 09:29:59,737 [INFO ]  epoch:002 step:0000  l1_loss:0.013313 loss_sum:0.013313 aug:False 0.010189s/batch
+2024-11-19 09:31:16,392 [INFO ]  current_lr: 0.000100
+2024-11-19 09:31:17,400 [INFO ]  epoch:003 step:0000  l1_loss:0.012354 loss_sum:0.012354 aug:False 0.010077s/batch
+2024-11-19 09:32:34,022 [INFO ]  current_lr: 0.000100
+2024-11-19 09:32:35,074 [INFO ]  epoch:004 step:0000  l1_loss:0.011994 loss_sum:0.011994 aug:False 0.010513s/batch
+2024-11-19 09:33:51,570 [INFO ]  current_lr: 0.000100
+2024-11-19 09:33:52,816 [INFO ]  epoch:005 step:0000  l1_loss:0.012245 loss_sum:0.012245 aug:False 0.012457s/batch
+2024-11-19 09:35:09,188 [INFO ]  current_lr: 0.000100
+2024-11-19 09:35:10,352 [INFO ]  epoch:006 step:0000  l1_loss:0.014087 loss_sum:0.014087 aug:False 0.011631s/batch
+2024-11-19 09:36:26,833 [INFO ]  current_lr: 0.000100
+2024-11-19 09:36:27,844 [INFO ]  epoch:007 step:0000  l1_loss:0.014105 loss_sum:0.014105 aug:False 0.010106s/batch
+2024-11-19 09:37:44,281 [INFO ]  current_lr: 0.000100
+2024-11-19 09:37:45,317 [INFO ]  epoch:008 step:0000  l1_loss:0.013059 loss_sum:0.013059 aug:False 0.010352s/batch
+2024-11-19 09:39:01,783 [INFO ]  current_lr: 0.000100
+2024-11-19 09:39:02,773 [INFO ]  epoch:009 step:0000  l1_loss:0.012897 loss_sum:0.012897 aug:False 0.009894s/batch
+2024-11-19 09:40:19,233 [INFO ]  start testing...
+2024-11-19 09:40:19,233 [INFO ]  450 testing samples
+2024-11-19 09:40:28,873 [INFO ]  Mean: psnr:36.148183   ssim:0.939297 
+2024-11-19 09:40:28,874 [INFO ]  Std : psnr:1.890281   ssim:0.013651 
+2024-11-19 09:40:28,874 [INFO ]  best_psnr was:0.000000  at epoch: -1
+2024-11-19 09:40:28,874 [INFO ]  new best SNR
+2024-11-19 09:40:28,874 [INFO ]  best_psnr:36.148183 
+2024-11-19 09:40:28,874 [INFO ]  Saving state, epoch: 9 iter:0
+2024-11-19 09:40:31,964 [INFO ]  current_lr: 0.000100
+2024-11-19 09:40:33,033 [INFO ]  epoch:010 step:0000  l1_loss:0.012461 loss_sum:0.012461 aug:False 0.010679s/batch
+2024-11-19 09:41:49,354 [INFO ]  current_lr: 0.000100
+2024-11-19 09:41:50,382 [INFO ]  epoch:011 step:0000  l1_loss:0.011940 loss_sum:0.011940 aug:False 0.010279s/batch
+2024-11-19 09:43:06,799 [INFO ]  current_lr: 0.000100
+2024-11-19 09:43:07,827 [INFO ]  epoch:012 step:0000  l1_loss:0.013084 loss_sum:0.013084 aug:False 0.010280s/batch
+2024-11-19 09:44:24,207 [INFO ]  current_lr: 0.000100
+2024-11-19 09:44:25,255 [INFO ]  epoch:013 step:0000  l1_loss:0.012710 loss_sum:0.012710 aug:False 0.010468s/batch
+2024-11-19 09:45:41,594 [INFO ]  current_lr: 0.000100
+2024-11-19 09:45:42,588 [INFO ]  epoch:014 step:0000  l1_loss:0.011466 loss_sum:0.011466 aug:False 0.009932s/batch
+2024-11-19 09:46:58,925 [INFO ]  current_lr: 0.000100
+2024-11-19 09:47:00,014 [INFO ]  epoch:015 step:0000  l1_loss:0.011840 loss_sum:0.011840 aug:False 0.010891s/batch
+2024-11-19 09:48:16,359 [INFO ]  current_lr: 0.000100
+2024-11-19 09:48:17,356 [INFO ]  epoch:016 step:0000  l1_loss:0.012218 loss_sum:0.012218 aug:False 0.009963s/batch
+2024-11-19 09:49:33,678 [INFO ]  current_lr: 0.000100
+2024-11-19 09:49:34,724 [INFO ]  epoch:017 step:0000  l1_loss:0.012299 loss_sum:0.012299 aug:False 0.010458s/batch
+2024-11-19 09:50:51,063 [INFO ]  current_lr: 0.000100
+2024-11-19 09:50:52,174 [INFO ]  epoch:018 step:0000  l1_loss:0.011678 loss_sum:0.011678 aug:False 0.011100s/batch
+2024-11-19 09:52:08,532 [INFO ]  current_lr: 0.000100
+2024-11-19 09:52:09,534 [INFO ]  epoch:019 step:0000  l1_loss:0.012667 loss_sum:0.012667 aug:False 0.010016s/batch
+2024-11-19 09:53:25,893 [INFO ]  start testing...
+2024-11-19 09:53:25,894 [INFO ]  450 testing samples
+2024-11-19 09:53:35,498 [INFO ]  Mean: psnr:36.297149   ssim:0.940108 
+2024-11-19 09:53:35,499 [INFO ]  Std : psnr:1.929823   ssim:0.013451 
+2024-11-19 09:53:35,499 [INFO ]  best_psnr was:36.148183  at epoch: 9
+2024-11-19 09:53:35,499 [INFO ]  new best SNR
+2024-11-19 09:53:35,499 [INFO ]  best_psnr:36.297149 
+2024-11-19 09:53:35,499 [INFO ]  Saving state, epoch: 19 iter:0
+2024-11-19 09:53:38,536 [INFO ]  current_lr: 0.000100
+2024-11-19 09:53:39,604 [INFO ]  epoch:020 step:0000  l1_loss:0.011941 loss_sum:0.011941 aug:False 0.010670s/batch
+2024-11-19 09:54:55,909 [INFO ]  current_lr: 0.000100
+2024-11-19 09:54:56,941 [INFO ]  epoch:021 step:0000  l1_loss:0.010820 loss_sum:0.010820 aug:False 0.010311s/batch
+2024-11-19 09:56:13,318 [INFO ]  current_lr: 0.000099
+2024-11-19 09:56:14,348 [INFO ]  epoch:022 step:0000  l1_loss:0.011667 loss_sum:0.011667 aug:False 0.010293s/batch
+2024-11-19 09:57:30,711 [INFO ]  current_lr: 0.000099
+2024-11-19 09:57:31,705 [INFO ]  epoch:023 step:0000  l1_loss:0.012069 loss_sum:0.012069 aug:False 0.009929s/batch
+2024-11-19 09:58:48,018 [INFO ]  current_lr: 0.000099
+2024-11-19 09:58:49,051 [INFO ]  epoch:024 step:0000  l1_loss:0.012299 loss_sum:0.012299 aug:False 0.010320s/batch
+2024-11-19 10:00:05,386 [INFO ]  current_lr: 0.000099
+2024-11-19 10:00:06,392 [INFO ]  epoch:025 step:0000  l1_loss:0.011284 loss_sum:0.011284 aug:False 0.010048s/batch
+2024-11-19 10:01:22,727 [INFO ]  current_lr: 0.000099
+2024-11-19 10:01:23,772 [INFO ]  epoch:026 step:0000  l1_loss:0.012095 loss_sum:0.012095 aug:False 0.010449s/batch
+2024-11-19 10:02:40,133 [INFO ]  current_lr: 0.000099
+2024-11-19 10:02:41,153 [INFO ]  epoch:027 step:0000  l1_loss:0.012125 loss_sum:0.012125 aug:False 0.010191s/batch
+2024-11-19 10:03:57,501 [INFO ]  current_lr: 0.000099
+2024-11-19 10:03:58,477 [INFO ]  epoch:028 step:0000  l1_loss:0.012311 loss_sum:0.012311 aug:False 0.009756s/batch
+2024-11-19 10:05:14,804 [INFO ]  current_lr: 0.000099
+2024-11-19 10:05:15,832 [INFO ]  epoch:029 step:0000  l1_loss:0.012079 loss_sum:0.012079 aug:False 0.010273s/batch
+2024-11-19 10:06:32,196 [INFO ]  start testing...
+2024-11-19 10:06:32,196 [INFO ]  450 testing samples
+2024-11-19 10:06:41,757 [INFO ]  Mean: psnr:36.215688   ssim:0.939689 
+2024-11-19 10:06:41,758 [INFO ]  Std : psnr:1.942483   ssim:0.013529 
+2024-11-19 10:06:41,758 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 10:06:41,761 [INFO ]  current_lr: 0.000099
+2024-11-19 10:06:42,863 [INFO ]  epoch:030 step:0000  l1_loss:0.011858 loss_sum:0.011858 aug:False 0.011018s/batch
+2024-11-19 10:07:59,223 [INFO ]  current_lr: 0.000099
+2024-11-19 10:08:00,301 [INFO ]  epoch:031 step:0000  l1_loss:0.012158 loss_sum:0.012158 aug:False 0.010780s/batch
+2024-11-19 10:09:16,642 [INFO ]  current_lr: 0.000099
+2024-11-19 10:09:17,683 [INFO ]  epoch:032 step:0000  l1_loss:0.011833 loss_sum:0.011833 aug:False 0.010410s/batch
+2024-11-19 10:10:34,039 [INFO ]  current_lr: 0.000099
+2024-11-19 10:10:35,089 [INFO ]  epoch:033 step:0000  l1_loss:0.012083 loss_sum:0.012083 aug:False 0.010493s/batch
+2024-11-19 10:11:51,482 [INFO ]  current_lr: 0.000099
+2024-11-19 10:11:52,479 [INFO ]  epoch:034 step:0000  l1_loss:0.012123 loss_sum:0.012123 aug:False 0.009963s/batch
+2024-11-19 10:13:08,827 [INFO ]  current_lr: 0.000099
+2024-11-19 10:13:09,875 [INFO ]  epoch:035 step:0000  l1_loss:0.013485 loss_sum:0.013485 aug:False 0.010481s/batch
+2024-11-19 10:14:26,191 [INFO ]  current_lr: 0.000099
+2024-11-19 10:14:27,239 [INFO ]  epoch:036 step:0000  l1_loss:0.012925 loss_sum:0.012925 aug:False 0.010476s/batch
+2024-11-19 10:15:43,553 [INFO ]  current_lr: 0.000099
+2024-11-19 10:15:44,605 [INFO ]  epoch:037 step:0000  l1_loss:0.011802 loss_sum:0.011802 aug:False 0.010518s/batch
+2024-11-19 10:17:00,937 [INFO ]  current_lr: 0.000099
+2024-11-19 10:17:01,984 [INFO ]  epoch:038 step:0000  l1_loss:0.011838 loss_sum:0.011838 aug:False 0.010462s/batch
+2024-11-19 10:18:18,324 [INFO ]  current_lr: 0.000098
+2024-11-19 10:18:19,492 [INFO ]  epoch:039 step:0000  l1_loss:0.011672 loss_sum:0.011672 aug:False 0.011675s/batch
+2024-11-19 10:19:35,823 [INFO ]  start testing...
+2024-11-19 10:19:35,824 [INFO ]  450 testing samples
+2024-11-19 10:19:45,354 [INFO ]  Mean: psnr:36.265041   ssim:0.939948 
+2024-11-19 10:19:45,354 [INFO ]  Std : psnr:1.943292   ssim:0.013421 
+2024-11-19 10:19:45,354 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 10:19:45,356 [INFO ]  current_lr: 0.000098
+2024-11-19 10:19:46,399 [INFO ]  epoch:040 step:0000  l1_loss:0.013430 loss_sum:0.013430 aug:False 0.010426s/batch
+2024-11-19 10:21:02,724 [INFO ]  current_lr: 0.000098
+2024-11-19 10:21:03,764 [INFO ]  epoch:041 step:0000  l1_loss:0.011573 loss_sum:0.011573 aug:False 0.010394s/batch
+2024-11-19 10:22:20,138 [INFO ]  current_lr: 0.000098
+2024-11-19 10:22:21,225 [INFO ]  epoch:042 step:0000  l1_loss:0.011395 loss_sum:0.011395 aug:False 0.010859s/batch
+2024-11-19 10:23:37,579 [INFO ]  current_lr: 0.000098
+2024-11-19 10:23:38,580 [INFO ]  epoch:043 step:0000  l1_loss:0.011859 loss_sum:0.011859 aug:False 0.009996s/batch
+2024-11-19 10:24:54,937 [INFO ]  current_lr: 0.000098
+2024-11-19 10:24:55,931 [INFO ]  epoch:044 step:0000  l1_loss:0.012222 loss_sum:0.012222 aug:False 0.009940s/batch
+2024-11-19 10:26:12,313 [INFO ]  current_lr: 0.000098
+2024-11-19 10:26:13,383 [INFO ]  epoch:045 step:0000  l1_loss:0.011911 loss_sum:0.011911 aug:False 0.010695s/batch
+2024-11-19 10:27:29,711 [INFO ]  current_lr: 0.000098
+2024-11-19 10:27:30,757 [INFO ]  epoch:046 step:0000  l1_loss:0.011240 loss_sum:0.011240 aug:False 0.010448s/batch
+2024-11-19 10:28:47,154 [INFO ]  current_lr: 0.000098
+2024-11-19 10:28:48,257 [INFO ]  epoch:047 step:0000  l1_loss:0.012437 loss_sum:0.012437 aug:False 0.011026s/batch
+2024-11-19 10:30:04,627 [INFO ]  current_lr: 0.000098
+2024-11-19 10:30:05,626 [INFO ]  epoch:048 step:0000  l1_loss:0.011210 loss_sum:0.011210 aug:False 0.009991s/batch
+2024-11-19 10:31:22,004 [INFO ]  current_lr: 0.000098
+2024-11-19 10:31:23,026 [INFO ]  epoch:049 step:0000  l1_loss:0.012569 loss_sum:0.012569 aug:False 0.010214s/batch
+2024-11-19 10:32:39,392 [INFO ]  Saving state, epoch: 49 iter:0
+2024-11-19 10:32:44,493 [INFO ]  start testing...
+2024-11-19 10:32:44,494 [INFO ]  450 testing samples
+2024-11-19 10:32:54,274 [INFO ]  Mean: psnr:36.215047   ssim:0.939909 
+2024-11-19 10:32:54,274 [INFO ]  Std : psnr:1.960945   ssim:0.013526 
+2024-11-19 10:32:54,275 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 10:32:54,277 [INFO ]  current_lr: 0.000097
+2024-11-19 10:32:55,309 [INFO ]  epoch:050 step:0000  l1_loss:0.012855 loss_sum:0.012855 aug:False 0.010316s/batch
+2024-11-19 10:34:11,570 [INFO ]  current_lr: 0.000097
+2024-11-19 10:34:12,603 [INFO ]  epoch:051 step:0000  l1_loss:0.011230 loss_sum:0.011230 aug:False 0.010322s/batch
+2024-11-19 10:35:28,972 [INFO ]  current_lr: 0.000097
+2024-11-19 10:35:30,008 [INFO ]  epoch:052 step:0000  l1_loss:0.011832 loss_sum:0.011832 aug:False 0.010349s/batch
+2024-11-19 10:36:46,368 [INFO ]  current_lr: 0.000097
+2024-11-19 10:36:47,396 [INFO ]  epoch:053 step:0000  l1_loss:0.011789 loss_sum:0.011789 aug:False 0.010275s/batch
+2024-11-19 10:38:03,748 [INFO ]  current_lr: 0.000097
+2024-11-19 10:38:04,767 [INFO ]  epoch:054 step:0000  l1_loss:0.011877 loss_sum:0.011877 aug:False 0.010181s/batch
+2024-11-19 10:39:21,095 [INFO ]  current_lr: 0.000097
+2024-11-19 10:39:22,104 [INFO ]  epoch:055 step:0000  l1_loss:0.011123 loss_sum:0.011123 aug:False 0.010087s/batch
+2024-11-19 10:40:38,441 [INFO ]  current_lr: 0.000097
+2024-11-19 10:40:39,460 [INFO ]  epoch:056 step:0000  l1_loss:0.012266 loss_sum:0.012266 aug:False 0.010192s/batch
+2024-11-19 10:41:55,785 [INFO ]  current_lr: 0.000097
+2024-11-19 10:41:56,803 [INFO ]  epoch:057 step:0000  l1_loss:0.011602 loss_sum:0.011602 aug:False 0.010180s/batch
+2024-11-19 10:43:13,160 [INFO ]  current_lr: 0.000097
+2024-11-19 10:43:14,179 [INFO ]  epoch:058 step:0000  l1_loss:0.011478 loss_sum:0.011478 aug:False 0.010183s/batch
+2024-11-19 10:44:30,510 [INFO ]  current_lr: 0.000096
+2024-11-19 10:44:31,540 [INFO ]  epoch:059 step:0000  l1_loss:0.011435 loss_sum:0.011435 aug:False 0.010296s/batch
+2024-11-19 10:45:47,873 [INFO ]  start testing...
+2024-11-19 10:45:47,873 [INFO ]  450 testing samples
+2024-11-19 10:45:57,927 [INFO ]  Mean: psnr:36.180260   ssim:0.939785 
+2024-11-19 10:45:57,928 [INFO ]  Std : psnr:1.923556   ssim:0.013581 
+2024-11-19 10:45:57,928 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 10:45:57,931 [INFO ]  current_lr: 0.000096
+2024-11-19 10:45:59,032 [INFO ]  epoch:060 step:0000  l1_loss:0.011509 loss_sum:0.011509 aug:False 0.011009s/batch
+2024-11-19 10:47:15,393 [INFO ]  current_lr: 0.000096
+2024-11-19 10:47:16,507 [INFO ]  epoch:061 step:0000  l1_loss:0.011383 loss_sum:0.011383 aug:False 0.011137s/batch
+2024-11-19 10:48:32,878 [INFO ]  current_lr: 0.000096
+2024-11-19 10:48:33,940 [INFO ]  epoch:062 step:0000  l1_loss:0.011745 loss_sum:0.011745 aug:False 0.010619s/batch
+2024-11-19 10:49:50,317 [INFO ]  current_lr: 0.000096
+2024-11-19 10:49:51,408 [INFO ]  epoch:063 step:0000  l1_loss:0.011696 loss_sum:0.011696 aug:False 0.010903s/batch
+2024-11-19 10:51:07,693 [INFO ]  current_lr: 0.000096
+2024-11-19 10:51:08,708 [INFO ]  epoch:064 step:0000  l1_loss:0.011642 loss_sum:0.011642 aug:False 0.010141s/batch
+2024-11-19 10:52:25,004 [INFO ]  current_lr: 0.000096
+2024-11-19 10:52:26,043 [INFO ]  epoch:065 step:0000  l1_loss:0.011068 loss_sum:0.011068 aug:False 0.010386s/batch
+2024-11-19 10:53:42,323 [INFO ]  current_lr: 0.000096
+2024-11-19 10:53:43,367 [INFO ]  epoch:066 step:0000  l1_loss:0.010983 loss_sum:0.010983 aug:False 0.010439s/batch
+2024-11-19 10:54:59,648 [INFO ]  current_lr: 0.000096
+2024-11-19 10:55:00,650 [INFO ]  epoch:067 step:0000  l1_loss:0.011350 loss_sum:0.011350 aug:False 0.010021s/batch
+2024-11-19 10:56:16,947 [INFO ]  current_lr: 0.000095
+2024-11-19 10:56:18,019 [INFO ]  epoch:068 step:0000  l1_loss:0.010987 loss_sum:0.010987 aug:False 0.010718s/batch
+2024-11-19 10:57:34,330 [INFO ]  current_lr: 0.000095
+2024-11-19 10:57:35,323 [INFO ]  epoch:069 step:0000  l1_loss:0.011907 loss_sum:0.011907 aug:False 0.009920s/batch
+2024-11-19 10:58:51,668 [INFO ]  start testing...
+2024-11-19 10:58:51,669 [INFO ]  450 testing samples
+2024-11-19 10:59:01,297 [INFO ]  Mean: psnr:36.018315   ssim:0.939617 
+2024-11-19 10:59:01,297 [INFO ]  Std : psnr:1.851736   ssim:0.013340 
+2024-11-19 10:59:01,297 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 10:59:01,300 [INFO ]  current_lr: 0.000095
+2024-11-19 10:59:02,301 [INFO ]  epoch:070 step:0000  l1_loss:0.010862 loss_sum:0.010862 aug:False 0.010014s/batch
+2024-11-19 11:00:18,603 [INFO ]  current_lr: 0.000095
+2024-11-19 11:00:19,606 [INFO ]  epoch:071 step:0000  l1_loss:0.010773 loss_sum:0.010773 aug:False 0.010027s/batch
+2024-11-19 11:01:35,933 [INFO ]  current_lr: 0.000095
+2024-11-19 11:01:36,958 [INFO ]  epoch:072 step:0000  l1_loss:0.011034 loss_sum:0.011034 aug:False 0.010245s/batch
+2024-11-19 11:02:53,294 [INFO ]  current_lr: 0.000095
+2024-11-19 11:02:54,320 [INFO ]  epoch:073 step:0000  l1_loss:0.011456 loss_sum:0.011456 aug:False 0.010254s/batch
+2024-11-19 11:04:10,638 [INFO ]  current_lr: 0.000095
+2024-11-19 11:04:11,690 [INFO ]  epoch:074 step:0000  l1_loss:0.011014 loss_sum:0.011014 aug:False 0.010510s/batch
+2024-11-19 11:05:28,006 [INFO ]  current_lr: 0.000094
+2024-11-19 11:05:29,081 [INFO ]  epoch:075 step:0000  l1_loss:0.010927 loss_sum:0.010927 aug:False 0.010741s/batch
+2024-11-19 11:06:45,428 [INFO ]  current_lr: 0.000094
+2024-11-19 11:06:46,486 [INFO ]  epoch:076 step:0000  l1_loss:0.010246 loss_sum:0.010246 aug:False 0.010577s/batch
+2024-11-19 11:08:02,813 [INFO ]  current_lr: 0.000094
+2024-11-19 11:08:03,823 [INFO ]  epoch:077 step:0000  l1_loss:0.010649 loss_sum:0.010649 aug:False 0.010096s/batch
+2024-11-19 11:09:20,137 [INFO ]  current_lr: 0.000094
+2024-11-19 11:09:21,179 [INFO ]  epoch:078 step:0000  l1_loss:0.010813 loss_sum:0.010813 aug:False 0.010414s/batch
+2024-11-19 11:10:37,511 [INFO ]  current_lr: 0.000094
+2024-11-19 11:10:38,561 [INFO ]  epoch:079 step:0000  l1_loss:0.011032 loss_sum:0.011032 aug:False 0.010494s/batch
+2024-11-19 11:11:54,842 [INFO ]  start testing...
+2024-11-19 11:11:54,842 [INFO ]  450 testing samples
+2024-11-19 11:12:04,402 [INFO ]  Mean: psnr:35.987764   ssim:0.939648 
+2024-11-19 11:12:04,402 [INFO ]  Std : psnr:1.904345   ssim:0.013487 
+2024-11-19 11:12:04,402 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 11:12:04,405 [INFO ]  current_lr: 0.000094
+2024-11-19 11:12:05,449 [INFO ]  epoch:080 step:0000  l1_loss:0.011045 loss_sum:0.011045 aug:False 0.010438s/batch
+2024-11-19 11:13:21,810 [INFO ]  current_lr: 0.000094
+2024-11-19 11:13:22,802 [INFO ]  epoch:081 step:0000  l1_loss:0.010229 loss_sum:0.010229 aug:False 0.009906s/batch
+2024-11-19 11:14:39,119 [INFO ]  current_lr: 0.000093
+2024-11-19 11:14:40,129 [INFO ]  epoch:082 step:0000  l1_loss:0.010648 loss_sum:0.010648 aug:False 0.010100s/batch
+2024-11-19 11:15:56,427 [INFO ]  current_lr: 0.000093
+2024-11-19 11:15:57,503 [INFO ]  epoch:083 step:0000  l1_loss:0.011145 loss_sum:0.011145 aug:False 0.010746s/batch
+2024-11-19 11:17:13,842 [INFO ]  current_lr: 0.000093
+2024-11-19 11:17:14,889 [INFO ]  epoch:084 step:0000  l1_loss:0.010606 loss_sum:0.010606 aug:False 0.010464s/batch
+2024-11-19 11:18:31,236 [INFO ]  current_lr: 0.000093
+2024-11-19 11:18:32,387 [INFO ]  epoch:085 step:0000  l1_loss:0.010147 loss_sum:0.010147 aug:False 0.011503s/batch
+2024-11-19 11:19:48,765 [INFO ]  current_lr: 0.000093
+2024-11-19 11:19:49,774 [INFO ]  epoch:086 step:0000  l1_loss:0.010040 loss_sum:0.010040 aug:False 0.010073s/batch
+2024-11-19 11:21:06,075 [INFO ]  current_lr: 0.000093
+2024-11-19 11:21:07,157 [INFO ]  epoch:087 step:0000  l1_loss:0.010351 loss_sum:0.010351 aug:False 0.010819s/batch
+2024-11-19 11:22:23,467 [INFO ]  current_lr: 0.000092
+2024-11-19 11:22:24,468 [INFO ]  epoch:088 step:0000  l1_loss:0.010105 loss_sum:0.010105 aug:False 0.010008s/batch
+2024-11-19 11:23:40,794 [INFO ]  current_lr: 0.000092
+2024-11-19 11:23:41,856 [INFO ]  epoch:089 step:0000  l1_loss:0.010030 loss_sum:0.010030 aug:False 0.010618s/batch
+2024-11-19 11:24:58,195 [INFO ]  start testing...
+2024-11-19 11:24:58,196 [INFO ]  450 testing samples
+2024-11-19 11:25:07,756 [INFO ]  Mean: psnr:35.904001   ssim:0.939101 
+2024-11-19 11:25:07,757 [INFO ]  Std : psnr:1.897004   ssim:0.013553 
+2024-11-19 11:25:07,757 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 11:25:07,759 [INFO ]  current_lr: 0.000092
+2024-11-19 11:25:08,809 [INFO ]  epoch:090 step:0000  l1_loss:0.010320 loss_sum:0.010320 aug:False 0.010497s/batch
+2024-11-19 11:26:25,135 [INFO ]  current_lr: 0.000092
+2024-11-19 11:26:26,196 [INFO ]  epoch:091 step:0000  l1_loss:0.009657 loss_sum:0.009657 aug:False 0.010598s/batch
+2024-11-19 11:27:42,546 [INFO ]  current_lr: 0.000092
+2024-11-19 11:27:43,536 [INFO ]  epoch:092 step:0000  l1_loss:0.009451 loss_sum:0.009451 aug:False 0.009893s/batch
+2024-11-19 11:28:59,862 [INFO ]  current_lr: 0.000092
+2024-11-19 11:29:00,891 [INFO ]  epoch:093 step:0000  l1_loss:0.010093 loss_sum:0.010093 aug:False 0.010284s/batch
+2024-11-19 11:30:17,231 [INFO ]  current_lr: 0.000091
+2024-11-19 11:30:18,222 [INFO ]  epoch:094 step:0000  l1_loss:0.009864 loss_sum:0.009864 aug:False 0.009909s/batch
+2024-11-19 11:31:34,561 [INFO ]  current_lr: 0.000091
+2024-11-19 11:31:35,552 [INFO ]  epoch:095 step:0000  l1_loss:0.010286 loss_sum:0.010286 aug:False 0.009909s/batch
+2024-11-19 11:32:51,877 [INFO ]  current_lr: 0.000091
+2024-11-19 11:32:52,877 [INFO ]  epoch:096 step:0000  l1_loss:0.010387 loss_sum:0.010387 aug:False 0.009988s/batch
+2024-11-19 11:34:09,207 [INFO ]  current_lr: 0.000091
+2024-11-19 11:34:10,284 [INFO ]  epoch:097 step:0000  l1_loss:0.010251 loss_sum:0.010251 aug:False 0.010762s/batch
+2024-11-19 11:35:26,619 [INFO ]  current_lr: 0.000091
+2024-11-19 11:35:27,620 [INFO ]  epoch:098 step:0000  l1_loss:0.009984 loss_sum:0.009984 aug:False 0.010003s/batch
+2024-11-19 11:36:43,963 [INFO ]  current_lr: 0.000090
+2024-11-19 11:36:44,959 [INFO ]  epoch:099 step:0000  l1_loss:0.010342 loss_sum:0.010342 aug:False 0.009947s/batch
+2024-11-19 11:38:01,290 [INFO ]  Saving state, epoch: 99 iter:0
+2024-11-19 11:38:04,950 [INFO ]  start testing...
+2024-11-19 11:38:04,951 [INFO ]  450 testing samples
+2024-11-19 11:38:14,612 [INFO ]  Mean: psnr:36.052363   ssim:0.939497 
+2024-11-19 11:38:14,612 [INFO ]  Std : psnr:1.890313   ssim:0.013435 
+2024-11-19 11:38:14,612 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 11:38:14,615 [INFO ]  current_lr: 0.000090
+2024-11-19 11:38:15,687 [INFO ]  epoch:100 step:0000  l1_loss:0.009915 loss_sum:0.009915 aug:False 0.010713s/batch
+2024-11-19 11:39:31,939 [INFO ]  current_lr: 0.000090
+2024-11-19 11:39:32,991 [INFO ]  epoch:101 step:0000  l1_loss:0.010156 loss_sum:0.010156 aug:False 0.010508s/batch
+2024-11-19 11:40:49,311 [INFO ]  current_lr: 0.000090
+2024-11-19 11:40:50,340 [INFO ]  epoch:102 step:0000  l1_loss:0.010190 loss_sum:0.010190 aug:False 0.010279s/batch
+2024-11-19 11:42:06,725 [INFO ]  current_lr: 0.000090
+2024-11-19 11:42:07,821 [INFO ]  epoch:103 step:0000  l1_loss:0.010541 loss_sum:0.010541 aug:False 0.010952s/batch
+2024-11-19 11:43:24,166 [INFO ]  current_lr: 0.000090
+2024-11-19 11:43:25,165 [INFO ]  epoch:104 step:0000  l1_loss:0.010035 loss_sum:0.010035 aug:False 0.009984s/batch
+2024-11-19 11:44:41,527 [INFO ]  current_lr: 0.000089
+2024-11-19 11:44:42,552 [INFO ]  epoch:105 step:0000  l1_loss:0.010199 loss_sum:0.010199 aug:False 0.010246s/batch
+2024-11-19 11:45:58,930 [INFO ]  current_lr: 0.000089
+2024-11-19 11:45:59,977 [INFO ]  epoch:106 step:0000  l1_loss:0.009982 loss_sum:0.009982 aug:False 0.010462s/batch
+2024-11-19 11:47:16,302 [INFO ]  current_lr: 0.000089
+2024-11-19 11:47:17,457 [INFO ]  epoch:107 step:0000  l1_loss:0.010063 loss_sum:0.010063 aug:False 0.011541s/batch
+2024-11-19 11:48:33,829 [INFO ]  current_lr: 0.000089
+2024-11-19 11:48:34,852 [INFO ]  epoch:108 step:0000  l1_loss:0.009887 loss_sum:0.009887 aug:False 0.010220s/batch
+2024-11-19 11:49:51,204 [INFO ]  current_lr: 0.000089
+2024-11-19 11:49:52,275 [INFO ]  epoch:109 step:0000  l1_loss:0.009913 loss_sum:0.009913 aug:False 0.010697s/batch
+2024-11-19 11:51:08,640 [INFO ]  start testing...
+2024-11-19 11:51:08,641 [INFO ]  450 testing samples
+2024-11-19 11:51:18,246 [INFO ]  Mean: psnr:36.095867   ssim:0.939858 
+2024-11-19 11:51:18,247 [INFO ]  Std : psnr:1.896742   ssim:0.013331 
+2024-11-19 11:51:18,247 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 11:51:18,249 [INFO ]  current_lr: 0.000088
+2024-11-19 11:51:19,318 [INFO ]  epoch:110 step:0000  l1_loss:0.010470 loss_sum:0.010470 aug:False 0.010686s/batch
+2024-11-19 11:52:35,637 [INFO ]  current_lr: 0.000088
+2024-11-19 11:52:36,720 [INFO ]  epoch:111 step:0000  l1_loss:0.010252 loss_sum:0.010252 aug:False 0.010816s/batch
+2024-11-19 11:53:53,090 [INFO ]  current_lr: 0.000088
+2024-11-19 11:53:54,156 [INFO ]  epoch:112 step:0000  l1_loss:0.010537 loss_sum:0.010537 aug:False 0.010658s/batch
+2024-11-19 11:55:10,536 [INFO ]  current_lr: 0.000088
+2024-11-19 11:55:11,568 [INFO ]  epoch:113 step:0000  l1_loss:0.010074 loss_sum:0.010074 aug:False 0.010315s/batch
+2024-11-19 11:56:27,926 [INFO ]  current_lr: 0.000088
+2024-11-19 11:56:28,982 [INFO ]  epoch:114 step:0000  l1_loss:0.009785 loss_sum:0.009785 aug:False 0.010547s/batch
+2024-11-19 11:57:45,382 [INFO ]  current_lr: 0.000087
+2024-11-19 11:57:46,433 [INFO ]  epoch:115 step:0000  l1_loss:0.010186 loss_sum:0.010186 aug:False 0.010499s/batch
+2024-11-19 11:59:02,833 [INFO ]  current_lr: 0.000087
+2024-11-19 11:59:03,845 [INFO ]  epoch:116 step:0000  l1_loss:0.009958 loss_sum:0.009958 aug:False 0.010122s/batch
+2024-11-19 12:00:20,196 [INFO ]  current_lr: 0.000087
+2024-11-19 12:00:21,194 [INFO ]  epoch:117 step:0000  l1_loss:0.009858 loss_sum:0.009858 aug:False 0.009975s/batch
+2024-11-19 12:01:37,565 [INFO ]  current_lr: 0.000087
+2024-11-19 12:01:38,592 [INFO ]  epoch:118 step:0000  l1_loss:0.010306 loss_sum:0.010306 aug:False 0.010259s/batch
+2024-11-19 12:02:54,951 [INFO ]  current_lr: 0.000086
+2024-11-19 12:02:56,010 [INFO ]  epoch:119 step:0000  l1_loss:0.009841 loss_sum:0.009841 aug:False 0.010579s/batch
+2024-11-19 12:04:12,394 [INFO ]  start testing...
+2024-11-19 12:04:12,395 [INFO ]  450 testing samples
+2024-11-19 12:04:22,280 [INFO ]  Mean: psnr:36.071947   ssim:0.939719 
+2024-11-19 12:04:22,281 [INFO ]  Std : psnr:1.885746   ssim:0.013377 
+2024-11-19 12:04:22,281 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 12:04:22,284 [INFO ]  current_lr: 0.000086
+2024-11-19 12:04:23,389 [INFO ]  epoch:120 step:0000  l1_loss:0.010377 loss_sum:0.010377 aug:False 0.011050s/batch
+2024-11-19 12:05:39,719 [INFO ]  current_lr: 0.000086
+2024-11-19 12:05:40,760 [INFO ]  epoch:121 step:0000  l1_loss:0.010061 loss_sum:0.010061 aug:False 0.010410s/batch
+2024-11-19 12:06:57,087 [INFO ]  current_lr: 0.000086
+2024-11-19 12:06:58,090 [INFO ]  epoch:122 step:0000  l1_loss:0.010340 loss_sum:0.010340 aug:False 0.010030s/batch
+2024-11-19 12:08:14,438 [INFO ]  current_lr: 0.000086
+2024-11-19 12:08:15,466 [INFO ]  epoch:123 step:0000  l1_loss:0.010312 loss_sum:0.010312 aug:False 0.010268s/batch
+2024-11-19 12:09:31,832 [INFO ]  current_lr: 0.000085
+2024-11-19 12:09:32,885 [INFO ]  epoch:124 step:0000  l1_loss:0.010005 loss_sum:0.010005 aug:False 0.010529s/batch
+2024-11-19 12:10:49,263 [INFO ]  current_lr: 0.000085
+2024-11-19 12:10:50,318 [INFO ]  epoch:125 step:0000  l1_loss:0.009455 loss_sum:0.009455 aug:False 0.010552s/batch
+2024-11-19 12:12:06,651 [INFO ]  current_lr: 0.000085
+2024-11-19 12:12:07,689 [INFO ]  epoch:126 step:0000  l1_loss:0.009913 loss_sum:0.009913 aug:False 0.010381s/batch
+2024-11-19 12:13:24,079 [INFO ]  current_lr: 0.000085
+2024-11-19 12:13:25,131 [INFO ]  epoch:127 step:0000  l1_loss:0.010046 loss_sum:0.010046 aug:False 0.010520s/batch
+2024-11-19 12:14:41,477 [INFO ]  current_lr: 0.000084
+2024-11-19 12:14:42,570 [INFO ]  epoch:128 step:0000  l1_loss:0.010340 loss_sum:0.010340 aug:False 0.010920s/batch
+2024-11-19 12:15:58,930 [INFO ]  current_lr: 0.000084
+2024-11-19 12:16:00,038 [INFO ]  epoch:129 step:0000  l1_loss:0.010104 loss_sum:0.010104 aug:False 0.011070s/batch
+2024-11-19 12:17:16,405 [INFO ]  start testing...
+2024-11-19 12:17:16,406 [INFO ]  450 testing samples
+2024-11-19 12:17:26,000 [INFO ]  Mean: psnr:36.053187   ssim:0.939524 
+2024-11-19 12:17:26,000 [INFO ]  Std : psnr:1.862495   ssim:0.013392 
+2024-11-19 12:17:26,001 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 12:17:26,003 [INFO ]  current_lr: 0.000084
+2024-11-19 12:17:27,019 [INFO ]  epoch:130 step:0000  l1_loss:0.009851 loss_sum:0.009851 aug:False 0.010151s/batch
+2024-11-19 12:18:43,401 [INFO ]  current_lr: 0.000084
+2024-11-19 12:18:44,452 [INFO ]  epoch:131 step:0000  l1_loss:0.009900 loss_sum:0.009900 aug:False 0.010508s/batch
+2024-11-19 12:20:00,832 [INFO ]  current_lr: 0.000084
+2024-11-19 12:20:01,876 [INFO ]  epoch:132 step:0000  l1_loss:0.009771 loss_sum:0.009771 aug:False 0.010429s/batch
+2024-11-19 12:21:18,251 [INFO ]  current_lr: 0.000083
+2024-11-19 12:21:19,251 [INFO ]  epoch:133 step:0000  l1_loss:0.009784 loss_sum:0.009784 aug:False 0.009993s/batch
+2024-11-19 12:22:35,605 [INFO ]  current_lr: 0.000083
+2024-11-19 12:22:36,672 [INFO ]  epoch:134 step:0000  l1_loss:0.009518 loss_sum:0.009518 aug:False 0.010659s/batch
+2024-11-19 12:23:53,032 [INFO ]  current_lr: 0.000083
+2024-11-19 12:23:54,059 [INFO ]  epoch:135 step:0000  l1_loss:0.009984 loss_sum:0.009984 aug:False 0.010267s/batch
+2024-11-19 12:25:10,437 [INFO ]  current_lr: 0.000083
+2024-11-19 12:25:11,482 [INFO ]  epoch:136 step:0000  l1_loss:0.010142 loss_sum:0.010142 aug:False 0.010444s/batch
+2024-11-19 12:26:27,840 [INFO ]  current_lr: 0.000082
+2024-11-19 12:26:28,833 [INFO ]  epoch:137 step:0000  l1_loss:0.009617 loss_sum:0.009617 aug:False 0.009921s/batch
+2024-11-19 12:27:45,146 [INFO ]  current_lr: 0.000082
+2024-11-19 12:27:46,220 [INFO ]  epoch:138 step:0000  l1_loss:0.009948 loss_sum:0.009948 aug:False 0.010740s/batch
+2024-11-19 12:29:02,580 [INFO ]  current_lr: 0.000082
+2024-11-19 12:29:03,593 [INFO ]  epoch:139 step:0000  l1_loss:0.010235 loss_sum:0.010235 aug:False 0.010128s/batch
+2024-11-19 12:30:19,936 [INFO ]  start testing...
+2024-11-19 12:30:19,936 [INFO ]  450 testing samples
+2024-11-19 12:30:29,712 [INFO ]  Mean: psnr:36.172526   ssim:0.940418 
+2024-11-19 12:30:29,712 [INFO ]  Std : psnr:1.900529   ssim:0.013289 
+2024-11-19 12:30:29,712 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 12:30:29,718 [INFO ]  current_lr: 0.000082
+2024-11-19 12:30:30,749 [INFO ]  epoch:140 step:0000  l1_loss:0.009989 loss_sum:0.009989 aug:False 0.010303s/batch
+2024-11-19 12:31:47,059 [INFO ]  current_lr: 0.000081
+2024-11-19 12:31:48,182 [INFO ]  epoch:141 step:0000  l1_loss:0.010247 loss_sum:0.010247 aug:False 0.011217s/batch
+2024-11-19 12:33:04,558 [INFO ]  current_lr: 0.000081
+2024-11-19 12:33:05,571 [INFO ]  epoch:142 step:0000  l1_loss:0.009914 loss_sum:0.009914 aug:False 0.010121s/batch
+2024-11-19 12:34:21,929 [INFO ]  current_lr: 0.000081
+2024-11-19 12:34:22,931 [INFO ]  epoch:143 step:0000  l1_loss:0.009993 loss_sum:0.009993 aug:False 0.010011s/batch
+2024-11-19 12:35:39,312 [INFO ]  current_lr: 0.000081
+2024-11-19 12:35:40,355 [INFO ]  epoch:144 step:0000  l1_loss:0.009852 loss_sum:0.009852 aug:False 0.010422s/batch
+2024-11-19 12:36:56,721 [INFO ]  current_lr: 0.000080
+2024-11-19 12:36:57,798 [INFO ]  epoch:145 step:0000  l1_loss:0.009911 loss_sum:0.009911 aug:False 0.010767s/batch
+2024-11-19 12:38:14,180 [INFO ]  current_lr: 0.000080
+2024-11-19 12:38:15,171 [INFO ]  epoch:146 step:0000  l1_loss:0.009934 loss_sum:0.009934 aug:False 0.009899s/batch
+2024-11-19 12:39:31,546 [INFO ]  current_lr: 0.000080
+2024-11-19 12:39:32,574 [INFO ]  epoch:147 step:0000  l1_loss:0.009934 loss_sum:0.009934 aug:False 0.010273s/batch
+2024-11-19 12:40:48,910 [INFO ]  current_lr: 0.000080
+2024-11-19 12:40:49,912 [INFO ]  epoch:148 step:0000  l1_loss:0.010089 loss_sum:0.010089 aug:False 0.010021s/batch
+2024-11-19 12:42:06,245 [INFO ]  current_lr: 0.000079
+2024-11-19 12:42:07,240 [INFO ]  epoch:149 step:0000  l1_loss:0.010028 loss_sum:0.010028 aug:False 0.009945s/batch
+2024-11-19 12:43:23,614 [INFO ]  Saving state, epoch: 149 iter:0
+2024-11-19 12:43:26,883 [INFO ]  start testing...
+2024-11-19 12:43:26,883 [INFO ]  450 testing samples
+2024-11-19 12:43:36,560 [INFO ]  Mean: psnr:36.013048   ssim:0.939587 
+2024-11-19 12:43:36,561 [INFO ]  Std : psnr:1.915336   ssim:0.013385 
+2024-11-19 12:43:36,561 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 12:43:36,564 [INFO ]  current_lr: 0.000079
+2024-11-19 12:43:37,600 [INFO ]  epoch:150 step:0000  l1_loss:0.010445 loss_sum:0.010445 aug:False 0.010358s/batch
+2024-11-19 12:44:53,834 [INFO ]  current_lr: 0.000079
+2024-11-19 12:44:54,849 [INFO ]  epoch:151 step:0000  l1_loss:0.009429 loss_sum:0.009429 aug:False 0.010144s/batch
+2024-11-19 12:46:11,166 [INFO ]  current_lr: 0.000079
+2024-11-19 12:46:12,192 [INFO ]  epoch:152 step:0000  l1_loss:0.009550 loss_sum:0.009550 aug:False 0.010252s/batch
+2024-11-19 12:47:28,537 [INFO ]  current_lr: 0.000078
+2024-11-19 12:47:29,542 [INFO ]  epoch:153 step:0000  l1_loss:0.010153 loss_sum:0.010153 aug:False 0.010040s/batch
+2024-11-19 12:48:45,943 [INFO ]  current_lr: 0.000078
+2024-11-19 12:48:47,002 [INFO ]  epoch:154 step:0000  l1_loss:0.009582 loss_sum:0.009582 aug:False 0.010589s/batch
+2024-11-19 12:50:03,398 [INFO ]  current_lr: 0.000078
+2024-11-19 12:50:04,422 [INFO ]  epoch:155 step:0000  l1_loss:0.009685 loss_sum:0.009685 aug:False 0.010232s/batch
+2024-11-19 12:51:20,786 [INFO ]  current_lr: 0.000078
+2024-11-19 12:51:21,842 [INFO ]  epoch:156 step:0000  l1_loss:0.009746 loss_sum:0.009746 aug:False 0.010547s/batch
+2024-11-19 12:52:38,239 [INFO ]  current_lr: 0.000077
+2024-11-19 12:52:39,270 [INFO ]  epoch:157 step:0000  l1_loss:0.009676 loss_sum:0.009676 aug:False 0.010307s/batch
+2024-11-19 12:53:55,615 [INFO ]  current_lr: 0.000077
+2024-11-19 12:53:56,609 [INFO ]  epoch:158 step:0000  l1_loss:0.009916 loss_sum:0.009916 aug:False 0.009928s/batch
+2024-11-19 12:55:12,968 [INFO ]  current_lr: 0.000077
+2024-11-19 12:55:14,026 [INFO ]  epoch:159 step:0000  l1_loss:0.009746 loss_sum:0.009746 aug:False 0.010576s/batch
+2024-11-19 12:56:30,408 [INFO ]  start testing...
+2024-11-19 12:56:30,408 [INFO ]  450 testing samples
+2024-11-19 12:56:39,947 [INFO ]  Mean: psnr:36.040315   ssim:0.939743 
+2024-11-19 12:56:39,947 [INFO ]  Std : psnr:1.888047   ssim:0.013320 
+2024-11-19 12:56:39,948 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 12:56:39,950 [INFO ]  current_lr: 0.000077
+2024-11-19 12:56:40,935 [INFO ]  epoch:160 step:0000  l1_loss:0.009519 loss_sum:0.009519 aug:False 0.009847s/batch
+2024-11-19 12:57:57,289 [INFO ]  current_lr: 0.000076
+2024-11-19 12:57:58,349 [INFO ]  epoch:161 step:0000  l1_loss:0.009751 loss_sum:0.009751 aug:False 0.010592s/batch
+2024-11-19 12:59:14,685 [INFO ]  current_lr: 0.000076
+2024-11-19 12:59:15,752 [INFO ]  epoch:162 step:0000  l1_loss:0.010098 loss_sum:0.010098 aug:False 0.010665s/batch
+2024-11-19 13:00:32,053 [INFO ]  current_lr: 0.000076
+2024-11-19 13:00:33,065 [INFO ]  epoch:163 step:0000  l1_loss:0.010246 loss_sum:0.010246 aug:False 0.010109s/batch
+2024-11-19 13:01:49,415 [INFO ]  current_lr: 0.000075
+2024-11-19 13:01:50,416 [INFO ]  epoch:164 step:0000  l1_loss:0.009881 loss_sum:0.009881 aug:False 0.010007s/batch
+2024-11-19 13:03:06,787 [INFO ]  current_lr: 0.000075
+2024-11-19 13:03:07,827 [INFO ]  epoch:165 step:0000  l1_loss:0.009665 loss_sum:0.009665 aug:False 0.010402s/batch
+2024-11-19 13:04:24,139 [INFO ]  current_lr: 0.000075
+2024-11-19 13:04:25,174 [INFO ]  epoch:166 step:0000  l1_loss:0.010429 loss_sum:0.010429 aug:False 0.010348s/batch
+2024-11-19 13:05:41,485 [INFO ]  current_lr: 0.000075
+2024-11-19 13:05:42,523 [INFO ]  epoch:167 step:0000  l1_loss:0.009692 loss_sum:0.009692 aug:False 0.010378s/batch
+2024-11-19 13:06:58,854 [INFO ]  current_lr: 0.000074
+2024-11-19 13:06:59,884 [INFO ]  epoch:168 step:0000  l1_loss:0.009720 loss_sum:0.009720 aug:False 0.010295s/batch
+2024-11-19 13:08:16,252 [INFO ]  current_lr: 0.000074
+2024-11-19 13:08:17,309 [INFO ]  epoch:169 step:0000  l1_loss:0.009789 loss_sum:0.009789 aug:False 0.010567s/batch
+2024-11-19 13:09:33,648 [INFO ]  start testing...
+2024-11-19 13:09:33,648 [INFO ]  450 testing samples
+2024-11-19 13:09:43,188 [INFO ]  Mean: psnr:36.031166   ssim:0.939490 
+2024-11-19 13:09:43,189 [INFO ]  Std : psnr:1.878957   ssim:0.013355 
+2024-11-19 13:09:43,189 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 13:09:43,191 [INFO ]  current_lr: 0.000074
+2024-11-19 13:09:44,247 [INFO ]  epoch:170 step:0000  l1_loss:0.009442 loss_sum:0.009442 aug:False 0.010559s/batch
+2024-11-19 13:11:00,593 [INFO ]  current_lr: 0.000074
+2024-11-19 13:11:01,651 [INFO ]  epoch:171 step:0000  l1_loss:0.009801 loss_sum:0.009801 aug:False 0.010575s/batch
+2024-11-19 13:12:17,975 [INFO ]  current_lr: 0.000073
+2024-11-19 13:12:19,014 [INFO ]  epoch:172 step:0000  l1_loss:0.009930 loss_sum:0.009930 aug:False 0.010386s/batch
+2024-11-19 13:13:35,342 [INFO ]  current_lr: 0.000073
+2024-11-19 13:13:36,356 [INFO ]  epoch:173 step:0000  l1_loss:0.009724 loss_sum:0.009724 aug:False 0.010133s/batch
+2024-11-19 13:14:52,697 [INFO ]  current_lr: 0.000073
+2024-11-19 13:14:53,693 [INFO ]  epoch:174 step:0000  l1_loss:0.009515 loss_sum:0.009515 aug:False 0.009952s/batch
+2024-11-19 13:16:10,028 [INFO ]  current_lr: 0.000072
+2024-11-19 13:16:11,128 [INFO ]  epoch:175 step:0000  l1_loss:0.009928 loss_sum:0.009928 aug:False 0.010995s/batch
+2024-11-19 13:17:27,516 [INFO ]  current_lr: 0.000072
+2024-11-19 13:17:28,589 [INFO ]  epoch:176 step:0000  l1_loss:0.009766 loss_sum:0.009766 aug:False 0.010723s/batch
+2024-11-19 13:18:44,985 [INFO ]  current_lr: 0.000072
+2024-11-19 13:18:46,020 [INFO ]  epoch:177 step:0000  l1_loss:0.009618 loss_sum:0.009618 aug:False 0.010342s/batch
+2024-11-19 13:20:02,375 [INFO ]  current_lr: 0.000072
+2024-11-19 13:20:03,420 [INFO ]  epoch:178 step:0000  l1_loss:0.009553 loss_sum:0.009553 aug:False 0.010447s/batch
+2024-11-19 13:21:19,784 [INFO ]  current_lr: 0.000071
+2024-11-19 13:21:20,839 [INFO ]  epoch:179 step:0000  l1_loss:0.010115 loss_sum:0.010115 aug:False 0.010549s/batch
+2024-11-19 13:22:37,207 [INFO ]  start testing...
+2024-11-19 13:22:37,207 [INFO ]  450 testing samples
+2024-11-19 13:22:46,713 [INFO ]  Mean: psnr:36.037245   ssim:0.939624 
+2024-11-19 13:22:46,714 [INFO ]  Std : psnr:1.873945   ssim:0.013339 
+2024-11-19 13:22:46,714 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 13:22:46,716 [INFO ]  current_lr: 0.000071
+2024-11-19 13:22:47,747 [INFO ]  epoch:180 step:0000  l1_loss:0.009980 loss_sum:0.009980 aug:False 0.010307s/batch
+2024-11-19 13:24:04,122 [INFO ]  current_lr: 0.000071
+2024-11-19 13:24:05,135 [INFO ]  epoch:181 step:0000  l1_loss:0.009610 loss_sum:0.009610 aug:False 0.010120s/batch
+2024-11-19 13:25:21,488 [INFO ]  current_lr: 0.000070
+2024-11-19 13:25:22,490 [INFO ]  epoch:182 step:0000  l1_loss:0.009312 loss_sum:0.009312 aug:False 0.010011s/batch
+2024-11-19 13:26:38,820 [INFO ]  current_lr: 0.000070
+2024-11-19 13:26:39,808 [INFO ]  epoch:183 step:0000  l1_loss:0.009928 loss_sum:0.009928 aug:False 0.009870s/batch
+2024-11-19 13:27:56,206 [INFO ]  current_lr: 0.000070
+2024-11-19 13:27:57,238 [INFO ]  epoch:184 step:0000  l1_loss:0.009824 loss_sum:0.009824 aug:False 0.010315s/batch
+2024-11-19 13:29:13,593 [INFO ]  current_lr: 0.000070
+2024-11-19 13:29:14,685 [INFO ]  epoch:185 step:0000  l1_loss:0.009271 loss_sum:0.009271 aug:False 0.010920s/batch
+2024-11-19 13:30:31,044 [INFO ]  current_lr: 0.000069
+2024-11-19 13:30:32,122 [INFO ]  epoch:186 step:0000  l1_loss:0.009802 loss_sum:0.009802 aug:False 0.010775s/batch
+2024-11-19 13:31:48,509 [INFO ]  current_lr: 0.000069
+2024-11-19 13:31:49,567 [INFO ]  epoch:187 step:0000  l1_loss:0.009431 loss_sum:0.009431 aug:False 0.010574s/batch
+2024-11-19 13:33:05,994 [INFO ]  current_lr: 0.000069
+2024-11-19 13:33:07,063 [INFO ]  epoch:188 step:0000  l1_loss:0.009659 loss_sum:0.009659 aug:False 0.010688s/batch
+2024-11-19 13:34:23,468 [INFO ]  current_lr: 0.000068
+2024-11-19 13:34:24,501 [INFO ]  epoch:189 step:0000  l1_loss:0.009792 loss_sum:0.009792 aug:False 0.010327s/batch
+2024-11-19 13:35:40,904 [INFO ]  start testing...
+2024-11-19 13:35:40,904 [INFO ]  450 testing samples
+2024-11-19 13:35:50,692 [INFO ]  Mean: psnr:36.043490   ssim:0.939486 
+2024-11-19 13:35:50,692 [INFO ]  Std : psnr:1.870918   ssim:0.013443 
+2024-11-19 13:35:50,693 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 13:35:50,694 [INFO ]  current_lr: 0.000068
+2024-11-19 13:35:51,784 [INFO ]  epoch:190 step:0000  l1_loss:0.009293 loss_sum:0.009293 aug:False 0.010897s/batch
+2024-11-19 13:37:08,100 [INFO ]  current_lr: 0.000068
+2024-11-19 13:37:09,152 [INFO ]  epoch:191 step:0000  l1_loss:0.010015 loss_sum:0.010015 aug:False 0.010513s/batch
+2024-11-19 13:38:25,552 [INFO ]  current_lr: 0.000068
+2024-11-19 13:38:26,591 [INFO ]  epoch:192 step:0000  l1_loss:0.010111 loss_sum:0.010111 aug:False 0.010387s/batch
+2024-11-19 13:39:42,994 [INFO ]  current_lr: 0.000067
+2024-11-19 13:39:44,042 [INFO ]  epoch:193 step:0000  l1_loss:0.009295 loss_sum:0.009295 aug:False 0.010473s/batch
+2024-11-19 13:41:00,396 [INFO ]  current_lr: 0.000067
+2024-11-19 13:41:01,480 [INFO ]  epoch:194 step:0000  l1_loss:0.009659 loss_sum:0.009659 aug:False 0.010828s/batch
+2024-11-19 13:42:17,868 [INFO ]  current_lr: 0.000067
+2024-11-19 13:42:18,950 [INFO ]  epoch:195 step:0000  l1_loss:0.009474 loss_sum:0.009474 aug:False 0.010811s/batch
+2024-11-19 13:43:35,361 [INFO ]  current_lr: 0.000066
+2024-11-19 13:43:36,367 [INFO ]  epoch:196 step:0000  l1_loss:0.009489 loss_sum:0.009489 aug:False 0.010054s/batch
+2024-11-19 13:44:52,765 [INFO ]  current_lr: 0.000066
+2024-11-19 13:44:53,763 [INFO ]  epoch:197 step:0000  l1_loss:0.009696 loss_sum:0.009696 aug:False 0.009968s/batch
+2024-11-19 13:46:10,171 [INFO ]  current_lr: 0.000066
+2024-11-19 13:46:11,197 [INFO ]  epoch:198 step:0000  l1_loss:0.009657 loss_sum:0.009657 aug:False 0.010257s/batch
+2024-11-19 13:47:27,584 [INFO ]  current_lr: 0.000065
+2024-11-19 13:47:28,618 [INFO ]  epoch:199 step:0000  l1_loss:0.009423 loss_sum:0.009423 aug:False 0.010325s/batch
+2024-11-19 13:48:44,997 [INFO ]  Saving state, epoch: 199 iter:0
+2024-11-19 13:48:48,571 [INFO ]  start testing...
+2024-11-19 13:48:48,571 [INFO ]  450 testing samples
+2024-11-19 13:48:58,337 [INFO ]  Mean: psnr:35.980787   ssim:0.939269 
+2024-11-19 13:48:58,338 [INFO ]  Std : psnr:1.898812   ssim:0.013515 
+2024-11-19 13:48:58,338 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 13:48:58,340 [INFO ]  current_lr: 0.000065
+2024-11-19 13:48:59,425 [INFO ]  epoch:200 step:0000  l1_loss:0.009492 loss_sum:0.009492 aug:False 0.010847s/batch
+2024-11-19 13:50:15,710 [INFO ]  current_lr: 0.000065
+2024-11-19 13:50:16,772 [INFO ]  epoch:201 step:0000  l1_loss:0.009600 loss_sum:0.009600 aug:False 0.010613s/batch
+2024-11-19 13:51:33,234 [INFO ]  current_lr: 0.000065
+2024-11-19 13:51:34,256 [INFO ]  epoch:202 step:0000  l1_loss:0.009915 loss_sum:0.009915 aug:False 0.010215s/batch
+2024-11-19 13:52:50,800 [INFO ]  current_lr: 0.000064
+2024-11-19 13:52:51,836 [INFO ]  epoch:203 step:0000  l1_loss:0.009828 loss_sum:0.009828 aug:False 0.010359s/batch
+2024-11-19 13:54:08,339 [INFO ]  current_lr: 0.000064
+2024-11-19 13:54:09,337 [INFO ]  epoch:204 step:0000  l1_loss:0.010243 loss_sum:0.010243 aug:False 0.009977s/batch
+2024-11-19 13:55:25,803 [INFO ]  current_lr: 0.000064
+2024-11-19 13:55:26,893 [INFO ]  epoch:205 step:0000  l1_loss:0.010256 loss_sum:0.010256 aug:False 0.010889s/batch
+2024-11-19 13:56:43,416 [INFO ]  current_lr: 0.000063
+2024-11-19 13:56:44,400 [INFO ]  epoch:206 step:0000  l1_loss:0.009581 loss_sum:0.009581 aug:False 0.009829s/batch
+2024-11-19 13:58:00,904 [INFO ]  current_lr: 0.000063
+2024-11-19 13:58:01,918 [INFO ]  epoch:207 step:0000  l1_loss:0.009198 loss_sum:0.009198 aug:False 0.010139s/batch
+2024-11-19 13:59:18,467 [INFO ]  current_lr: 0.000063
+2024-11-19 13:59:19,491 [INFO ]  epoch:208 step:0000  l1_loss:0.009797 loss_sum:0.009797 aug:False 0.010227s/batch
+2024-11-19 14:00:36,039 [INFO ]  current_lr: 0.000062
+2024-11-19 14:00:37,092 [INFO ]  epoch:209 step:0000  l1_loss:0.009228 loss_sum:0.009228 aug:False 0.010530s/batch
+2024-11-19 14:01:53,636 [INFO ]  start testing...
+2024-11-19 14:01:53,636 [INFO ]  450 testing samples
+2024-11-19 14:02:03,333 [INFO ]  Mean: psnr:36.034203   ssim:0.939504 
+2024-11-19 14:02:03,334 [INFO ]  Std : psnr:1.869734   ssim:0.013402 
+2024-11-19 14:02:03,334 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 14:02:03,335 [INFO ]  current_lr: 0.000062
+2024-11-19 14:02:04,427 [INFO ]  epoch:210 step:0000  l1_loss:0.009897 loss_sum:0.009897 aug:False 0.010909s/batch
+2024-11-19 14:03:20,770 [INFO ]  current_lr: 0.000062
+2024-11-19 14:03:21,793 [INFO ]  epoch:211 step:0000  l1_loss:0.009726 loss_sum:0.009726 aug:False 0.010227s/batch
+2024-11-19 14:04:38,260 [INFO ]  current_lr: 0.000062
+2024-11-19 14:04:39,311 [INFO ]  epoch:212 step:0000  l1_loss:0.009480 loss_sum:0.009480 aug:False 0.010501s/batch
+2024-11-19 14:05:55,816 [INFO ]  current_lr: 0.000061
+2024-11-19 14:05:56,869 [INFO ]  epoch:213 step:0000  l1_loss:0.009844 loss_sum:0.009844 aug:False 0.010521s/batch
+2024-11-19 14:07:13,380 [INFO ]  current_lr: 0.000061
+2024-11-19 14:07:14,425 [INFO ]  epoch:214 step:0000  l1_loss:0.009492 loss_sum:0.009492 aug:False 0.010442s/batch
+2024-11-19 14:08:30,957 [INFO ]  current_lr: 0.000061
+2024-11-19 14:08:32,039 [INFO ]  epoch:215 step:0000  l1_loss:0.010049 loss_sum:0.010049 aug:False 0.010817s/batch
+2024-11-19 14:09:48,582 [INFO ]  current_lr: 0.000060
+2024-11-19 14:09:49,598 [INFO ]  epoch:216 step:0000  l1_loss:0.009042 loss_sum:0.009042 aug:False 0.010156s/batch
+2024-11-19 14:11:06,154 [INFO ]  current_lr: 0.000060
+2024-11-19 14:11:07,170 [INFO ]  epoch:217 step:0000  l1_loss:0.009070 loss_sum:0.009070 aug:False 0.010156s/batch
+2024-11-19 14:12:23,636 [INFO ]  current_lr: 0.000060
+2024-11-19 14:12:24,643 [INFO ]  epoch:218 step:0000  l1_loss:0.009907 loss_sum:0.009907 aug:False 0.010069s/batch
+2024-11-19 14:13:41,124 [INFO ]  current_lr: 0.000059
+2024-11-19 14:13:42,128 [INFO ]  epoch:219 step:0000  l1_loss:0.009298 loss_sum:0.009298 aug:False 0.010034s/batch
+2024-11-19 14:14:58,577 [INFO ]  start testing...
+2024-11-19 14:14:58,577 [INFO ]  450 testing samples
+2024-11-19 14:15:08,170 [INFO ]  Mean: psnr:35.984702   ssim:0.939257 
+2024-11-19 14:15:08,171 [INFO ]  Std : psnr:1.877073   ssim:0.013458 
+2024-11-19 14:15:08,171 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 14:15:08,174 [INFO ]  current_lr: 0.000059
+2024-11-19 14:15:09,387 [INFO ]  epoch:220 step:0000  l1_loss:0.009553 loss_sum:0.009553 aug:False 0.012128s/batch
+2024-11-19 14:16:25,756 [INFO ]  current_lr: 0.000059
+2024-11-19 14:16:26,776 [INFO ]  epoch:221 step:0000  l1_loss:0.009511 loss_sum:0.009511 aug:False 0.010192s/batch
+2024-11-19 14:17:43,334 [INFO ]  current_lr: 0.000058
+2024-11-19 14:17:44,363 [INFO ]  epoch:222 step:0000  l1_loss:0.009173 loss_sum:0.009173 aug:False 0.010282s/batch
+2024-11-19 14:19:00,859 [INFO ]  current_lr: 0.000058
+2024-11-19 14:19:01,862 [INFO ]  epoch:223 step:0000  l1_loss:0.009700 loss_sum:0.009700 aug:False 0.010022s/batch
+2024-11-19 14:20:18,378 [INFO ]  current_lr: 0.000058
+2024-11-19 14:20:19,371 [INFO ]  epoch:224 step:0000  l1_loss:0.009280 loss_sum:0.009280 aug:False 0.009925s/batch
+2024-11-19 14:21:35,843 [INFO ]  current_lr: 0.000058
+2024-11-19 14:21:36,848 [INFO ]  epoch:225 step:0000  l1_loss:0.009417 loss_sum:0.009417 aug:False 0.010048s/batch
+2024-11-19 14:22:53,402 [INFO ]  current_lr: 0.000057
+2024-11-19 14:22:54,438 [INFO ]  epoch:226 step:0000  l1_loss:0.009295 loss_sum:0.009295 aug:False 0.010355s/batch
+2024-11-19 14:24:10,942 [INFO ]  current_lr: 0.000057
+2024-11-19 14:24:11,990 [INFO ]  epoch:227 step:0000  l1_loss:0.009317 loss_sum:0.009317 aug:False 0.010478s/batch
+2024-11-19 14:25:28,491 [INFO ]  current_lr: 0.000057
+2024-11-19 14:25:29,517 [INFO ]  epoch:228 step:0000  l1_loss:0.009947 loss_sum:0.009947 aug:False 0.010247s/batch
+2024-11-19 14:26:45,986 [INFO ]  current_lr: 0.000056
+2024-11-19 14:26:47,040 [INFO ]  epoch:229 step:0000  l1_loss:0.009438 loss_sum:0.009438 aug:False 0.010539s/batch
+2024-11-19 14:28:03,538 [INFO ]  start testing...
+2024-11-19 14:28:03,539 [INFO ]  450 testing samples
+2024-11-19 14:28:13,173 [INFO ]  Mean: psnr:35.960452   ssim:0.939130 
+2024-11-19 14:28:13,174 [INFO ]  Std : psnr:1.886491   ssim:0.013526 
+2024-11-19 14:28:13,174 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 14:28:13,176 [INFO ]  current_lr: 0.000056
+2024-11-19 14:28:14,335 [INFO ]  epoch:230 step:0000  l1_loss:0.009361 loss_sum:0.009361 aug:False 0.011580s/batch
+2024-11-19 14:29:30,710 [INFO ]  current_lr: 0.000056
+2024-11-19 14:29:31,741 [INFO ]  epoch:231 step:0000  l1_loss:0.009368 loss_sum:0.009368 aug:False 0.010309s/batch
+2024-11-19 14:30:48,159 [INFO ]  current_lr: 0.000055
+2024-11-19 14:30:49,180 [INFO ]  epoch:232 step:0000  l1_loss:0.009506 loss_sum:0.009506 aug:False 0.010200s/batch
+2024-11-19 14:32:05,679 [INFO ]  current_lr: 0.000055
+2024-11-19 14:32:06,670 [INFO ]  epoch:233 step:0000  l1_loss:0.009463 loss_sum:0.009463 aug:False 0.009908s/batch
+2024-11-19 14:33:23,199 [INFO ]  current_lr: 0.000055
+2024-11-19 14:33:24,214 [INFO ]  epoch:234 step:0000  l1_loss:0.009629 loss_sum:0.009629 aug:False 0.010139s/batch
+2024-11-19 14:34:40,698 [INFO ]  current_lr: 0.000054
+2024-11-19 14:34:41,724 [INFO ]  epoch:235 step:0000  l1_loss:0.009713 loss_sum:0.009713 aug:False 0.010249s/batch
+2024-11-19 14:35:58,265 [INFO ]  current_lr: 0.000054
+2024-11-19 14:35:59,267 [INFO ]  epoch:236 step:0000  l1_loss:0.009472 loss_sum:0.009472 aug:False 0.010013s/batch
+2024-11-19 14:37:15,814 [INFO ]  current_lr: 0.000054
+2024-11-19 14:37:16,839 [INFO ]  epoch:237 step:0000  l1_loss:0.009986 loss_sum:0.009986 aug:False 0.010246s/batch
+2024-11-19 14:38:33,362 [INFO ]  current_lr: 0.000053
+2024-11-19 14:38:34,410 [INFO ]  epoch:238 step:0000  l1_loss:0.009411 loss_sum:0.009411 aug:False 0.010477s/batch
+2024-11-19 14:39:50,944 [INFO ]  current_lr: 0.000053
+2024-11-19 14:39:51,938 [INFO ]  epoch:239 step:0000  l1_loss:0.009453 loss_sum:0.009453 aug:False 0.009935s/batch
+2024-11-19 14:41:08,480 [INFO ]  start testing...
+2024-11-19 14:41:08,480 [INFO ]  450 testing samples
+2024-11-19 14:41:18,217 [INFO ]  Mean: psnr:35.970614   ssim:0.939019 
+2024-11-19 14:41:18,217 [INFO ]  Std : psnr:1.878574   ssim:0.013592 
+2024-11-19 14:41:18,217 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 14:41:18,220 [INFO ]  current_lr: 0.000053
+2024-11-19 14:41:19,252 [INFO ]  epoch:240 step:0000  l1_loss:0.009281 loss_sum:0.009281 aug:False 0.010311s/batch
+2024-11-19 14:42:35,663 [INFO ]  current_lr: 0.000053
+2024-11-19 14:42:36,658 [INFO ]  epoch:241 step:0000  l1_loss:0.009738 loss_sum:0.009738 aug:False 0.009935s/batch
+2024-11-19 14:43:53,175 [INFO ]  current_lr: 0.000052
+2024-11-19 14:43:54,170 [INFO ]  epoch:242 step:0000  l1_loss:0.009526 loss_sum:0.009526 aug:False 0.009943s/batch
+2024-11-19 14:45:10,728 [INFO ]  current_lr: 0.000052
+2024-11-19 14:45:11,834 [INFO ]  epoch:243 step:0000  l1_loss:0.009544 loss_sum:0.009544 aug:False 0.011051s/batch
+2024-11-19 14:46:28,418 [INFO ]  current_lr: 0.000052
+2024-11-19 14:46:29,483 [INFO ]  epoch:244 step:0000  l1_loss:0.009442 loss_sum:0.009442 aug:False 0.010644s/batch
+2024-11-19 14:47:46,049 [INFO ]  current_lr: 0.000051
+2024-11-19 14:47:47,087 [INFO ]  epoch:245 step:0000  l1_loss:0.009531 loss_sum:0.009531 aug:False 0.010381s/batch
+2024-11-19 14:49:03,643 [INFO ]  current_lr: 0.000051
+2024-11-19 14:49:04,662 [INFO ]  epoch:246 step:0000  l1_loss:0.009135 loss_sum:0.009135 aug:False 0.010182s/batch
+2024-11-19 14:50:21,242 [INFO ]  current_lr: 0.000051
+2024-11-19 14:50:22,310 [INFO ]  epoch:247 step:0000  l1_loss:0.009206 loss_sum:0.009206 aug:False 0.010674s/batch
+2024-11-19 14:51:38,881 [INFO ]  current_lr: 0.000050
+2024-11-19 14:51:39,887 [INFO ]  epoch:248 step:0000  l1_loss:0.009273 loss_sum:0.009273 aug:False 0.010058s/batch
+2024-11-19 14:52:56,468 [INFO ]  current_lr: 0.000050
+2024-11-19 14:52:57,490 [INFO ]  epoch:249 step:0000  l1_loss:0.009358 loss_sum:0.009358 aug:False 0.010210s/batch
+2024-11-19 14:54:14,071 [INFO ]  Saving state, epoch: 249 iter:0
+2024-11-19 14:54:17,692 [INFO ]  start testing...
+2024-11-19 14:54:17,693 [INFO ]  450 testing samples
+2024-11-19 14:54:27,343 [INFO ]  Mean: psnr:35.987502   ssim:0.939131 
+2024-11-19 14:54:27,343 [INFO ]  Std : psnr:1.879215   ssim:0.013552 
+2024-11-19 14:54:27,343 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 14:54:27,345 [INFO ]  current_lr: 0.000050
+2024-11-19 14:54:28,347 [INFO ]  epoch:250 step:0000  l1_loss:0.009624 loss_sum:0.009624 aug:False 0.010018s/batch
+2024-11-19 14:55:44,657 [INFO ]  current_lr: 0.000049
+2024-11-19 14:55:45,672 [INFO ]  epoch:251 step:0000  l1_loss:0.009896 loss_sum:0.009896 aug:False 0.010144s/batch
+2024-11-19 14:57:02,128 [INFO ]  current_lr: 0.000049
+2024-11-19 14:57:03,169 [INFO ]  epoch:252 step:0000  l1_loss:0.009351 loss_sum:0.009351 aug:False 0.010406s/batch
+2024-11-19 14:58:19,661 [INFO ]  current_lr: 0.000049
+2024-11-19 14:58:20,750 [INFO ]  epoch:253 step:0000  l1_loss:0.009430 loss_sum:0.009430 aug:False 0.010883s/batch
+2024-11-19 14:59:37,259 [INFO ]  current_lr: 0.000048
+2024-11-19 14:59:38,304 [INFO ]  epoch:254 step:0000  l1_loss:0.009446 loss_sum:0.009446 aug:False 0.010446s/batch
+2024-11-19 15:00:54,798 [INFO ]  current_lr: 0.000048
+2024-11-19 15:00:55,820 [INFO ]  epoch:255 step:0000  l1_loss:0.009451 loss_sum:0.009451 aug:False 0.010209s/batch
+2024-11-19 15:02:12,318 [INFO ]  current_lr: 0.000048
+2024-11-19 15:02:13,346 [INFO ]  epoch:256 step:0000  l1_loss:0.009275 loss_sum:0.009275 aug:False 0.010267s/batch
+2024-11-19 15:03:29,815 [INFO ]  current_lr: 0.000048
+2024-11-19 15:03:30,861 [INFO ]  epoch:257 step:0000  l1_loss:0.009899 loss_sum:0.009899 aug:False 0.010453s/batch
+2024-11-19 15:04:47,352 [INFO ]  current_lr: 0.000047
+2024-11-19 15:04:48,412 [INFO ]  epoch:258 step:0000  l1_loss:0.009335 loss_sum:0.009335 aug:False 0.010590s/batch
+2024-11-19 15:06:04,891 [INFO ]  current_lr: 0.000047
+2024-11-19 15:06:05,966 [INFO ]  epoch:259 step:0000  l1_loss:0.009512 loss_sum:0.009512 aug:False 0.010747s/batch
+2024-11-19 15:07:22,469 [INFO ]  start testing...
+2024-11-19 15:07:22,469 [INFO ]  450 testing samples
+2024-11-19 15:07:32,197 [INFO ]  Mean: psnr:35.965763   ssim:0.938927 
+2024-11-19 15:07:32,197 [INFO ]  Std : psnr:1.874703   ssim:0.013606 
+2024-11-19 15:07:32,198 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 15:07:32,200 [INFO ]  current_lr: 0.000047
+2024-11-19 15:07:33,225 [INFO ]  epoch:260 step:0000  l1_loss:0.009385 loss_sum:0.009385 aug:False 0.010244s/batch
+2024-11-19 15:08:49,562 [INFO ]  current_lr: 0.000046
+2024-11-19 15:08:50,662 [INFO ]  epoch:261 step:0000  l1_loss:0.009538 loss_sum:0.009538 aug:False 0.010990s/batch
+2024-11-19 15:10:07,139 [INFO ]  current_lr: 0.000046
+2024-11-19 15:10:08,184 [INFO ]  epoch:262 step:0000  l1_loss:0.009145 loss_sum:0.009145 aug:False 0.010449s/batch
+2024-11-19 15:11:24,733 [INFO ]  current_lr: 0.000046
+2024-11-19 15:11:25,822 [INFO ]  epoch:263 step:0000  l1_loss:0.009199 loss_sum:0.009199 aug:False 0.010883s/batch
+2024-11-19 15:12:42,335 [INFO ]  current_lr: 0.000045
+2024-11-19 15:12:43,380 [INFO ]  epoch:264 step:0000  l1_loss:0.009324 loss_sum:0.009324 aug:False 0.010446s/batch
+2024-11-19 15:13:59,868 [INFO ]  current_lr: 0.000045
+2024-11-19 15:14:00,896 [INFO ]  epoch:265 step:0000  l1_loss:0.009066 loss_sum:0.009066 aug:False 0.010274s/batch
+2024-11-19 15:15:17,382 [INFO ]  current_lr: 0.000045
+2024-11-19 15:15:18,442 [INFO ]  epoch:266 step:0000  l1_loss:0.009233 loss_sum:0.009233 aug:False 0.010593s/batch
+2024-11-19 15:16:34,919 [INFO ]  current_lr: 0.000044
+2024-11-19 15:16:35,920 [INFO ]  epoch:267 step:0000  l1_loss:0.009098 loss_sum:0.009098 aug:False 0.010006s/batch
+2024-11-19 15:17:52,453 [INFO ]  current_lr: 0.000044
+2024-11-19 15:17:53,480 [INFO ]  epoch:268 step:0000  l1_loss:0.009106 loss_sum:0.009106 aug:False 0.010265s/batch
+2024-11-19 15:19:09,962 [INFO ]  current_lr: 0.000044
+2024-11-19 15:19:10,980 [INFO ]  epoch:269 step:0000  l1_loss:0.009216 loss_sum:0.009216 aug:False 0.010183s/batch
+2024-11-19 15:20:27,498 [INFO ]  start testing...
+2024-11-19 15:20:27,498 [INFO ]  450 testing samples
+2024-11-19 15:20:37,266 [INFO ]  Mean: psnr:35.912426   ssim:0.938725 
+2024-11-19 15:20:37,266 [INFO ]  Std : psnr:1.867914   ssim:0.013630 
+2024-11-19 15:20:37,267 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 15:20:37,269 [INFO ]  current_lr: 0.000043
+2024-11-19 15:20:38,320 [INFO ]  epoch:270 step:0000  l1_loss:0.009458 loss_sum:0.009458 aug:False 0.010505s/batch
+2024-11-19 15:21:54,650 [INFO ]  current_lr: 0.000043
+2024-11-19 15:21:55,652 [INFO ]  epoch:271 step:0000  l1_loss:0.009367 loss_sum:0.009367 aug:False 0.010006s/batch
+2024-11-19 15:23:12,009 [INFO ]  current_lr: 0.000043
+2024-11-19 15:23:13,044 [INFO ]  epoch:272 step:0000  l1_loss:0.009412 loss_sum:0.009412 aug:False 0.010344s/batch
+2024-11-19 15:24:29,549 [INFO ]  current_lr: 0.000043
+2024-11-19 15:24:30,614 [INFO ]  epoch:273 step:0000  l1_loss:0.009354 loss_sum:0.009354 aug:False 0.010635s/batch
+2024-11-19 15:25:49,313 [INFO ]  current_lr: 0.000042
+2024-11-19 15:25:50,359 [INFO ]  epoch:274 step:0000  l1_loss:0.009431 loss_sum:0.009431 aug:False 0.010459s/batch
+2024-11-19 15:27:06,915 [INFO ]  current_lr: 0.000042
+2024-11-19 15:27:07,948 [INFO ]  epoch:275 step:0000  l1_loss:0.009498 loss_sum:0.009498 aug:False 0.010323s/batch
+2024-11-19 15:28:24,448 [INFO ]  current_lr: 0.000042
+2024-11-19 15:28:25,454 [INFO ]  epoch:276 step:0000  l1_loss:0.009390 loss_sum:0.009390 aug:False 0.010054s/batch
+2024-11-19 15:29:41,958 [INFO ]  current_lr: 0.000041
+2024-11-19 15:29:43,010 [INFO ]  epoch:277 step:0000  l1_loss:0.009190 loss_sum:0.009190 aug:False 0.010507s/batch
+2024-11-19 15:30:59,528 [INFO ]  current_lr: 0.000041
+2024-11-19 15:31:00,525 [INFO ]  epoch:278 step:0000  l1_loss:0.009322 loss_sum:0.009322 aug:False 0.009964s/batch
+2024-11-19 15:32:16,995 [INFO ]  current_lr: 0.000041
+2024-11-19 15:32:17,997 [INFO ]  epoch:279 step:0000  l1_loss:0.009332 loss_sum:0.009332 aug:False 0.010015s/batch
+2024-11-19 15:33:34,511 [INFO ]  start testing...
+2024-11-19 15:33:34,511 [INFO ]  450 testing samples
+2024-11-19 15:33:44,308 [INFO ]  Mean: psnr:35.888070   ssim:0.938528 
+2024-11-19 15:33:44,309 [INFO ]  Std : psnr:1.869579   ssim:0.013669 
+2024-11-19 15:33:44,309 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 15:33:44,311 [INFO ]  current_lr: 0.000040
+2024-11-19 15:33:45,317 [INFO ]  epoch:280 step:0000  l1_loss:0.009753 loss_sum:0.009753 aug:False 0.010053s/batch
+2024-11-19 15:35:01,644 [INFO ]  current_lr: 0.000040
+2024-11-19 15:35:02,699 [INFO ]  epoch:281 step:0000  l1_loss:0.009458 loss_sum:0.009458 aug:False 0.010543s/batch
+2024-11-19 15:36:19,058 [INFO ]  current_lr: 0.000040
+2024-11-19 15:36:20,063 [INFO ]  epoch:282 step:0000  l1_loss:0.009414 loss_sum:0.009414 aug:False 0.010042s/batch
+2024-11-19 15:37:36,547 [INFO ]  current_lr: 0.000039
+2024-11-19 15:37:37,575 [INFO ]  epoch:283 step:0000  l1_loss:0.009299 loss_sum:0.009299 aug:False 0.010271s/batch
+2024-11-19 15:38:54,079 [INFO ]  current_lr: 0.000039
+2024-11-19 15:38:55,145 [INFO ]  epoch:284 step:0000  l1_loss:0.009280 loss_sum:0.009280 aug:False 0.010654s/batch
+2024-11-19 15:40:11,641 [INFO ]  current_lr: 0.000039
+2024-11-19 15:40:12,685 [INFO ]  epoch:285 step:0000  l1_loss:0.009297 loss_sum:0.009297 aug:False 0.010434s/batch
+2024-11-19 15:41:29,198 [INFO ]  current_lr: 0.000039
+2024-11-19 15:41:30,205 [INFO ]  epoch:286 step:0000  l1_loss:0.009388 loss_sum:0.009388 aug:False 0.010069s/batch
+2024-11-19 15:42:46,783 [INFO ]  current_lr: 0.000038
+2024-11-19 15:42:47,995 [INFO ]  epoch:287 step:0000  l1_loss:0.009347 loss_sum:0.009347 aug:False 0.012113s/batch
+2024-11-19 15:44:04,571 [INFO ]  current_lr: 0.000038
+2024-11-19 15:44:05,607 [INFO ]  epoch:288 step:0000  l1_loss:0.009712 loss_sum:0.009712 aug:False 0.010358s/batch
+2024-11-19 15:45:22,144 [INFO ]  current_lr: 0.000038
+2024-11-19 15:45:23,225 [INFO ]  epoch:289 step:0000  l1_loss:0.008983 loss_sum:0.008983 aug:False 0.010808s/batch
+2024-11-19 15:46:39,749 [INFO ]  start testing...
+2024-11-19 15:46:39,749 [INFO ]  450 testing samples
+2024-11-19 15:46:49,527 [INFO ]  Mean: psnr:35.877128   ssim:0.938416 
+2024-11-19 15:46:49,528 [INFO ]  Std : psnr:1.863994   ssim:0.013693 
+2024-11-19 15:46:49,528 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 15:46:49,530 [INFO ]  current_lr: 0.000037
+2024-11-19 15:46:50,522 [INFO ]  epoch:290 step:0000  l1_loss:0.009285 loss_sum:0.009285 aug:False 0.009921s/batch
+2024-11-19 15:48:06,884 [INFO ]  current_lr: 0.000037
+2024-11-19 15:48:07,923 [INFO ]  epoch:291 step:0000  l1_loss:0.009306 loss_sum:0.009306 aug:False 0.010383s/batch
+2024-11-19 15:49:24,446 [INFO ]  current_lr: 0.000037
+2024-11-19 15:49:25,502 [INFO ]  epoch:292 step:0000  l1_loss:0.009182 loss_sum:0.009182 aug:False 0.010552s/batch
+2024-11-19 15:50:42,042 [INFO ]  current_lr: 0.000036
+2024-11-19 15:50:43,083 [INFO ]  epoch:293 step:0000  l1_loss:0.009120 loss_sum:0.009120 aug:False 0.010405s/batch
+2024-11-19 15:51:59,596 [INFO ]  current_lr: 0.000036
+2024-11-19 15:52:00,653 [INFO ]  epoch:294 step:0000  l1_loss:0.009443 loss_sum:0.009443 aug:False 0.010561s/batch
+2024-11-19 15:53:17,164 [INFO ]  current_lr: 0.000036
+2024-11-19 15:53:18,259 [INFO ]  epoch:295 step:0000  l1_loss:0.009575 loss_sum:0.009575 aug:False 0.010946s/batch
+2024-11-19 15:54:34,794 [INFO ]  current_lr: 0.000036
+2024-11-19 15:54:35,866 [INFO ]  epoch:296 step:0000  l1_loss:0.009061 loss_sum:0.009061 aug:False 0.010709s/batch
+2024-11-19 15:55:52,385 [INFO ]  current_lr: 0.000035
+2024-11-19 15:55:53,454 [INFO ]  epoch:297 step:0000  l1_loss:0.009373 loss_sum:0.009373 aug:False 0.010679s/batch
+2024-11-19 15:57:09,963 [INFO ]  current_lr: 0.000035
+2024-11-19 15:57:11,024 [INFO ]  epoch:298 step:0000  l1_loss:0.009193 loss_sum:0.009193 aug:False 0.010602s/batch
+2024-11-19 15:58:27,536 [INFO ]  current_lr: 0.000035
+2024-11-19 15:58:28,552 [INFO ]  epoch:299 step:0000  l1_loss:0.009498 loss_sum:0.009498 aug:False 0.010152s/batch
+2024-11-19 15:59:45,058 [INFO ]  Saving state, epoch: 299 iter:0
+2024-11-19 15:59:49,325 [INFO ]  start testing...
+2024-11-19 15:59:49,326 [INFO ]  450 testing samples
+2024-11-19 15:59:58,899 [INFO ]  Mean: psnr:35.862439   ssim:0.938345 
+2024-11-19 15:59:58,900 [INFO ]  Std : psnr:1.860079   ssim:0.013687 
+2024-11-19 15:59:58,900 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 15:59:58,902 [INFO ]  current_lr: 0.000034
+2024-11-19 15:59:59,918 [INFO ]  epoch:300 step:0000  l1_loss:0.009480 loss_sum:0.009480 aug:False 0.010161s/batch
+2024-11-19 16:01:16,184 [INFO ]  current_lr: 0.000034
+2024-11-19 16:01:17,265 [INFO ]  epoch:301 step:0000  l1_loss:0.009404 loss_sum:0.009404 aug:False 0.010806s/batch
+2024-11-19 16:02:33,791 [INFO ]  current_lr: 0.000034
+2024-11-19 16:02:34,896 [INFO ]  epoch:302 step:0000  l1_loss:0.008917 loss_sum:0.008917 aug:False 0.011040s/batch
+2024-11-19 16:03:51,394 [INFO ]  current_lr: 0.000033
+2024-11-19 16:03:52,438 [INFO ]  epoch:303 step:0000  l1_loss:0.009623 loss_sum:0.009623 aug:False 0.010439s/batch
+2024-11-19 16:05:08,949 [INFO ]  current_lr: 0.000033
+2024-11-19 16:05:10,007 [INFO ]  epoch:304 step:0000  l1_loss:0.009436 loss_sum:0.009436 aug:False 0.010567s/batch
+2024-11-19 16:06:26,486 [INFO ]  current_lr: 0.000033
+2024-11-19 16:06:27,563 [INFO ]  epoch:305 step:0000  l1_loss:0.009212 loss_sum:0.009212 aug:False 0.010755s/batch
+2024-11-19 16:07:44,055 [INFO ]  current_lr: 0.000033
+2024-11-19 16:07:45,071 [INFO ]  epoch:306 step:0000  l1_loss:0.009297 loss_sum:0.009297 aug:False 0.010151s/batch
+2024-11-19 16:09:01,608 [INFO ]  current_lr: 0.000032
+2024-11-19 16:09:02,644 [INFO ]  epoch:307 step:0000  l1_loss:0.009245 loss_sum:0.009245 aug:False 0.010355s/batch
+2024-11-19 16:10:19,132 [INFO ]  current_lr: 0.000032
+2024-11-19 16:10:20,168 [INFO ]  epoch:308 step:0000  l1_loss:0.009773 loss_sum:0.009773 aug:False 0.010353s/batch
+2024-11-19 16:11:36,689 [INFO ]  current_lr: 0.000032
+2024-11-19 16:11:37,700 [INFO ]  epoch:309 step:0000  l1_loss:0.009483 loss_sum:0.009483 aug:False 0.010110s/batch
+2024-11-19 16:12:54,211 [INFO ]  start testing...
+2024-11-19 16:12:54,211 [INFO ]  450 testing samples
+2024-11-19 16:13:03,803 [INFO ]  Mean: psnr:35.840987   ssim:0.938196 
+2024-11-19 16:13:03,803 [INFO ]  Std : psnr:1.851075   ssim:0.013727 
+2024-11-19 16:13:03,804 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 16:13:03,806 [INFO ]  current_lr: 0.000031
+2024-11-19 16:13:04,821 [INFO ]  epoch:310 step:0000  l1_loss:0.009155 loss_sum:0.009155 aug:False 0.010143s/batch
+2024-11-19 16:14:21,137 [INFO ]  current_lr: 0.000031
+2024-11-19 16:14:22,170 [INFO ]  epoch:311 step:0000  l1_loss:0.009195 loss_sum:0.009195 aug:False 0.010323s/batch
+2024-11-19 16:15:38,666 [INFO ]  current_lr: 0.000031
+2024-11-19 16:15:39,698 [INFO ]  epoch:312 step:0000  l1_loss:0.009420 loss_sum:0.009420 aug:False 0.010310s/batch
+2024-11-19 16:16:56,221 [INFO ]  current_lr: 0.000031
+2024-11-19 16:16:57,315 [INFO ]  epoch:313 step:0000  l1_loss:0.009659 loss_sum:0.009659 aug:False 0.010936s/batch
+2024-11-19 16:18:13,844 [INFO ]  current_lr: 0.000030
+2024-11-19 16:18:14,889 [INFO ]  epoch:314 step:0000  l1_loss:0.009240 loss_sum:0.009240 aug:False 0.010447s/batch
+2024-11-19 16:19:31,393 [INFO ]  current_lr: 0.000030
+2024-11-19 16:19:32,438 [INFO ]  epoch:315 step:0000  l1_loss:0.009097 loss_sum:0.009097 aug:False 0.010447s/batch
+2024-11-19 16:20:48,939 [INFO ]  current_lr: 0.000030
+2024-11-19 16:20:50,032 [INFO ]  epoch:316 step:0000  l1_loss:0.009127 loss_sum:0.009127 aug:False 0.010930s/batch
+2024-11-19 16:22:06,515 [INFO ]  current_lr: 0.000029
+2024-11-19 16:22:07,542 [INFO ]  epoch:317 step:0000  l1_loss:0.009060 loss_sum:0.009060 aug:False 0.010271s/batch
+2024-11-19 16:23:24,034 [INFO ]  current_lr: 0.000029
+2024-11-19 16:23:25,094 [INFO ]  epoch:318 step:0000  l1_loss:0.009136 loss_sum:0.009136 aug:False 0.010597s/batch
+2024-11-19 16:24:41,575 [INFO ]  current_lr: 0.000029
+2024-11-19 16:24:42,612 [INFO ]  epoch:319 step:0000  l1_loss:0.009213 loss_sum:0.009213 aug:False 0.010367s/batch
+2024-11-19 16:25:59,095 [INFO ]  start testing...
+2024-11-19 16:25:59,096 [INFO ]  450 testing samples
+2024-11-19 16:26:08,938 [INFO ]  Mean: psnr:35.786554   ssim:0.937800 
+2024-11-19 16:26:08,938 [INFO ]  Std : psnr:1.867379   ssim:0.013828 
+2024-11-19 16:26:08,939 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 16:26:08,941 [INFO ]  current_lr: 0.000028
+2024-11-19 16:26:09,970 [INFO ]  epoch:320 step:0000  l1_loss:0.009038 loss_sum:0.009038 aug:False 0.010284s/batch
+2024-11-19 16:27:26,306 [INFO ]  current_lr: 0.000028
+2024-11-19 16:27:27,325 [INFO ]  epoch:321 step:0000  l1_loss:0.009394 loss_sum:0.009394 aug:False 0.010187s/batch
+2024-11-19 16:28:43,816 [INFO ]  current_lr: 0.000028
+2024-11-19 16:28:44,896 [INFO ]  epoch:322 step:0000  l1_loss:0.009402 loss_sum:0.009402 aug:False 0.010800s/batch
+2024-11-19 16:30:01,359 [INFO ]  current_lr: 0.000028
+2024-11-19 16:30:02,404 [INFO ]  epoch:323 step:0000  l1_loss:0.009593 loss_sum:0.009593 aug:False 0.010446s/batch
+2024-11-19 16:31:18,947 [INFO ]  current_lr: 0.000027
+2024-11-19 16:31:20,009 [INFO ]  epoch:324 step:0000  l1_loss:0.009027 loss_sum:0.009027 aug:False 0.010616s/batch
+2024-11-19 16:32:36,515 [INFO ]  current_lr: 0.000027
+2024-11-19 16:32:37,542 [INFO ]  epoch:325 step:0000  l1_loss:0.008770 loss_sum:0.008770 aug:False 0.010256s/batch
+2024-11-19 16:33:54,027 [INFO ]  current_lr: 0.000027
+2024-11-19 16:33:55,065 [INFO ]  epoch:326 step:0000  l1_loss:0.009185 loss_sum:0.009185 aug:False 0.010372s/batch
+2024-11-19 16:35:11,507 [INFO ]  current_lr: 0.000027
+2024-11-19 16:35:12,588 [INFO ]  epoch:327 step:0000  l1_loss:0.009041 loss_sum:0.009041 aug:False 0.010804s/batch
+2024-11-19 16:36:29,095 [INFO ]  current_lr: 0.000026
+2024-11-19 16:36:30,167 [INFO ]  epoch:328 step:0000  l1_loss:0.009000 loss_sum:0.009000 aug:False 0.010717s/batch
+2024-11-19 16:37:46,678 [INFO ]  current_lr: 0.000026
+2024-11-19 16:37:47,685 [INFO ]  epoch:329 step:0000  l1_loss:0.009054 loss_sum:0.009054 aug:False 0.010066s/batch
+2024-11-19 16:39:04,160 [INFO ]  start testing...
+2024-11-19 16:39:04,160 [INFO ]  450 testing samples
+2024-11-19 16:39:13,780 [INFO ]  Mean: psnr:35.802634   ssim:0.937896 
+2024-11-19 16:39:13,781 [INFO ]  Std : psnr:1.856692   ssim:0.013821 
+2024-11-19 16:39:13,781 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 16:39:13,783 [INFO ]  current_lr: 0.000026
+2024-11-19 16:39:14,768 [INFO ]  epoch:330 step:0000  l1_loss:0.009033 loss_sum:0.009033 aug:False 0.009848s/batch
+2024-11-19 16:40:31,120 [INFO ]  current_lr: 0.000025
+2024-11-19 16:40:32,141 [INFO ]  epoch:331 step:0000  l1_loss:0.009280 loss_sum:0.009280 aug:False 0.010202s/batch
+2024-11-19 16:41:48,673 [INFO ]  current_lr: 0.000025
+2024-11-19 16:41:49,721 [INFO ]  epoch:332 step:0000  l1_loss:0.009079 loss_sum:0.009079 aug:False 0.010474s/batch
+2024-11-19 16:43:06,292 [INFO ]  current_lr: 0.000025
+2024-11-19 16:43:07,298 [INFO ]  epoch:333 step:0000  l1_loss:0.009344 loss_sum:0.009344 aug:False 0.010057s/batch
+2024-11-19 16:44:23,814 [INFO ]  current_lr: 0.000025
+2024-11-19 16:44:24,839 [INFO ]  epoch:334 step:0000  l1_loss:0.009477 loss_sum:0.009477 aug:False 0.010248s/batch
+2024-11-19 16:45:41,386 [INFO ]  current_lr: 0.000024
+2024-11-19 16:45:42,396 [INFO ]  epoch:335 step:0000  l1_loss:0.009401 loss_sum:0.009401 aug:False 0.010088s/batch
+2024-11-19 16:46:58,905 [INFO ]  current_lr: 0.000024
+2024-11-19 16:46:59,950 [INFO ]  epoch:336 step:0000  l1_loss:0.009103 loss_sum:0.009103 aug:False 0.010449s/batch
+2024-11-19 16:48:16,490 [INFO ]  current_lr: 0.000024
+2024-11-19 16:48:17,529 [INFO ]  epoch:337 step:0000  l1_loss:0.009492 loss_sum:0.009492 aug:False 0.010378s/batch
+2024-11-19 16:49:34,071 [INFO ]  current_lr: 0.000024
+2024-11-19 16:49:35,129 [INFO ]  epoch:338 step:0000  l1_loss:0.009136 loss_sum:0.009136 aug:False 0.010570s/batch
+2024-11-19 16:50:51,607 [INFO ]  current_lr: 0.000023
+2024-11-19 16:50:52,675 [INFO ]  epoch:339 step:0000  l1_loss:0.009575 loss_sum:0.009575 aug:False 0.010675s/batch
+2024-11-19 16:52:09,191 [INFO ]  start testing...
+2024-11-19 16:52:09,192 [INFO ]  450 testing samples
+2024-11-19 16:52:19,019 [INFO ]  Mean: psnr:35.762580   ssim:0.937661 
+2024-11-19 16:52:19,020 [INFO ]  Std : psnr:1.854372   ssim:0.013851 
+2024-11-19 16:52:19,020 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 16:52:19,022 [INFO ]  current_lr: 0.000023
+2024-11-19 16:52:20,064 [INFO ]  epoch:340 step:0000  l1_loss:0.009039 loss_sum:0.009039 aug:False 0.010414s/batch
+2024-11-19 16:53:36,500 [INFO ]  current_lr: 0.000023
+2024-11-19 16:53:37,523 [INFO ]  epoch:341 step:0000  l1_loss:0.009171 loss_sum:0.009171 aug:False 0.010226s/batch
+2024-11-19 16:54:54,041 [INFO ]  current_lr: 0.000022
+2024-11-19 16:54:55,096 [INFO ]  epoch:342 step:0000  l1_loss:0.009517 loss_sum:0.009517 aug:False 0.010548s/batch
+2024-11-19 16:56:11,628 [INFO ]  current_lr: 0.000022
+2024-11-19 16:56:12,673 [INFO ]  epoch:343 step:0000  l1_loss:0.009214 loss_sum:0.009214 aug:False 0.010444s/batch
+2024-11-19 16:57:29,163 [INFO ]  current_lr: 0.000022
+2024-11-19 16:57:30,196 [INFO ]  epoch:344 step:0000  l1_loss:0.009317 loss_sum:0.009317 aug:False 0.010321s/batch
+2024-11-19 16:58:46,699 [INFO ]  current_lr: 0.000022
+2024-11-19 16:58:47,705 [INFO ]  epoch:345 step:0000  l1_loss:0.008700 loss_sum:0.008700 aug:False 0.010057s/batch
+2024-11-19 17:00:04,245 [INFO ]  current_lr: 0.000021
+2024-11-19 17:00:05,249 [INFO ]  epoch:346 step:0000  l1_loss:0.009492 loss_sum:0.009492 aug:False 0.010040s/batch
+2024-11-19 17:01:21,758 [INFO ]  current_lr: 0.000021
+2024-11-19 17:01:22,764 [INFO ]  epoch:347 step:0000  l1_loss:0.009037 loss_sum:0.009037 aug:False 0.010057s/batch
+2024-11-19 17:02:39,292 [INFO ]  current_lr: 0.000021
+2024-11-19 17:02:40,316 [INFO ]  epoch:348 step:0000  l1_loss:0.008969 loss_sum:0.008969 aug:False 0.010238s/batch
+2024-11-19 17:03:56,871 [INFO ]  current_lr: 0.000021
+2024-11-19 17:03:57,954 [INFO ]  epoch:349 step:0000  l1_loss:0.009078 loss_sum:0.009078 aug:False 0.010822s/batch
+2024-11-19 17:05:14,492 [INFO ]  Saving state, epoch: 349 iter:0
+2024-11-19 17:05:17,375 [INFO ]  start testing...
+2024-11-19 17:05:17,375 [INFO ]  450 testing samples
+2024-11-19 17:05:27,010 [INFO ]  Mean: psnr:35.730523   ssim:0.937380 
+2024-11-19 17:05:27,011 [INFO ]  Std : psnr:1.849078   ssim:0.013920 
+2024-11-19 17:05:27,011 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 17:05:27,013 [INFO ]  current_lr: 0.000020
+2024-11-19 17:05:28,095 [INFO ]  epoch:350 step:0000  l1_loss:0.009059 loss_sum:0.009059 aug:False 0.010813s/batch
+2024-11-19 17:06:44,447 [INFO ]  current_lr: 0.000020
+2024-11-19 17:06:45,469 [INFO ]  epoch:351 step:0000  l1_loss:0.008709 loss_sum:0.008709 aug:False 0.010219s/batch
+2024-11-19 17:08:02,065 [INFO ]  current_lr: 0.000020
+2024-11-19 17:08:03,163 [INFO ]  epoch:352 step:0000  l1_loss:0.009545 loss_sum:0.009545 aug:False 0.010971s/batch
+2024-11-19 17:09:19,666 [INFO ]  current_lr: 0.000020
+2024-11-19 17:09:20,679 [INFO ]  epoch:353 step:0000  l1_loss:0.009423 loss_sum:0.009423 aug:False 0.010126s/batch
+2024-11-19 17:10:37,178 [INFO ]  current_lr: 0.000019
+2024-11-19 17:10:38,249 [INFO ]  epoch:354 step:0000  l1_loss:0.009306 loss_sum:0.009306 aug:False 0.010698s/batch
+2024-11-19 17:11:54,691 [INFO ]  current_lr: 0.000019
+2024-11-19 17:11:55,718 [INFO ]  epoch:355 step:0000  l1_loss:0.008880 loss_sum:0.008880 aug:False 0.010266s/batch
+2024-11-19 17:13:12,212 [INFO ]  current_lr: 0.000019
+2024-11-19 17:13:13,271 [INFO ]  epoch:356 step:0000  l1_loss:0.008734 loss_sum:0.008734 aug:False 0.010588s/batch
+2024-11-19 17:14:29,755 [INFO ]  current_lr: 0.000019
+2024-11-19 17:14:30,805 [INFO ]  epoch:357 step:0000  l1_loss:0.009511 loss_sum:0.009511 aug:False 0.010500s/batch
+2024-11-19 17:15:47,311 [INFO ]  current_lr: 0.000018
+2024-11-19 17:15:48,417 [INFO ]  epoch:358 step:0000  l1_loss:0.009015 loss_sum:0.009015 aug:False 0.011048s/batch
+2024-11-19 17:17:04,925 [INFO ]  current_lr: 0.000018
+2024-11-19 17:17:05,935 [INFO ]  epoch:359 step:0000  l1_loss:0.009101 loss_sum:0.009101 aug:False 0.010091s/batch
+2024-11-19 17:18:22,442 [INFO ]  start testing...
+2024-11-19 17:18:22,443 [INFO ]  450 testing samples
+2024-11-19 17:18:32,184 [INFO ]  Mean: psnr:35.727697   ssim:0.937313 
+2024-11-19 17:18:32,185 [INFO ]  Std : psnr:1.846471   ssim:0.013934 
+2024-11-19 17:18:32,185 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 17:18:32,187 [INFO ]  current_lr: 0.000018
+2024-11-19 17:18:33,307 [INFO ]  epoch:360 step:0000  l1_loss:0.009133 loss_sum:0.009133 aug:False 0.011199s/batch
+2024-11-19 17:19:49,818 [INFO ]  current_lr: 0.000018
+2024-11-19 17:19:50,863 [INFO ]  epoch:361 step:0000  l1_loss:0.009173 loss_sum:0.009173 aug:False 0.010439s/batch
+2024-11-19 17:21:07,372 [INFO ]  current_lr: 0.000017
+2024-11-19 17:21:08,417 [INFO ]  epoch:362 step:0000  l1_loss:0.009096 loss_sum:0.009096 aug:False 0.010442s/batch
+2024-11-19 17:22:24,892 [INFO ]  current_lr: 0.000017
+2024-11-19 17:22:25,938 [INFO ]  epoch:363 step:0000  l1_loss:0.009243 loss_sum:0.009243 aug:False 0.010453s/batch
+2024-11-19 17:23:42,430 [INFO ]  current_lr: 0.000017
+2024-11-19 17:23:43,455 [INFO ]  epoch:364 step:0000  l1_loss:0.009024 loss_sum:0.009024 aug:False 0.010245s/batch
+2024-11-19 17:24:59,915 [INFO ]  current_lr: 0.000017
+2024-11-19 17:25:00,924 [INFO ]  epoch:365 step:0000  l1_loss:0.009047 loss_sum:0.009047 aug:False 0.010084s/batch
+2024-11-19 17:26:17,412 [INFO ]  current_lr: 0.000017
+2024-11-19 17:26:18,452 [INFO ]  epoch:366 step:0000  l1_loss:0.008773 loss_sum:0.008773 aug:False 0.010386s/batch
+2024-11-19 17:27:35,015 [INFO ]  current_lr: 0.000016
+2024-11-19 17:27:36,065 [INFO ]  epoch:367 step:0000  l1_loss:0.008827 loss_sum:0.008827 aug:False 0.010489s/batch
+2024-11-19 17:28:52,560 [INFO ]  current_lr: 0.000016
+2024-11-19 17:28:53,616 [INFO ]  epoch:368 step:0000  l1_loss:0.009289 loss_sum:0.009289 aug:False 0.010548s/batch
+2024-11-19 17:30:10,077 [INFO ]  current_lr: 0.000016
+2024-11-19 17:30:11,093 [INFO ]  epoch:369 step:0000  l1_loss:0.009452 loss_sum:0.009452 aug:False 0.010148s/batch
+2024-11-19 17:31:27,586 [INFO ]  start testing...
+2024-11-19 17:31:27,587 [INFO ]  450 testing samples
+2024-11-19 17:31:37,348 [INFO ]  Mean: psnr:35.707441   ssim:0.937208 
+2024-11-19 17:31:37,348 [INFO ]  Std : psnr:1.846550   ssim:0.013958 
+2024-11-19 17:31:37,348 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 17:31:37,351 [INFO ]  current_lr: 0.000016
+2024-11-19 17:31:38,398 [INFO ]  epoch:370 step:0000  l1_loss:0.008987 loss_sum:0.008987 aug:False 0.010464s/batch
+2024-11-19 17:32:54,880 [INFO ]  current_lr: 0.000015
+2024-11-19 17:32:55,894 [INFO ]  epoch:371 step:0000  l1_loss:0.009567 loss_sum:0.009567 aug:False 0.010134s/batch
+2024-11-19 17:34:12,430 [INFO ]  current_lr: 0.000015
+2024-11-19 17:34:13,535 [INFO ]  epoch:372 step:0000  l1_loss:0.009119 loss_sum:0.009119 aug:False 0.011048s/batch
+2024-11-19 17:35:30,051 [INFO ]  current_lr: 0.000015
+2024-11-19 17:35:31,064 [INFO ]  epoch:373 step:0000  l1_loss:0.008872 loss_sum:0.008872 aug:False 0.010120s/batch
+2024-11-19 17:36:47,563 [INFO ]  current_lr: 0.000015
+2024-11-19 17:36:48,579 [INFO ]  epoch:374 step:0000  l1_loss:0.008928 loss_sum:0.008928 aug:False 0.010151s/batch
+2024-11-19 17:38:05,087 [INFO ]  current_lr: 0.000015
+2024-11-19 17:38:06,087 [INFO ]  epoch:375 step:0000  l1_loss:0.009138 loss_sum:0.009138 aug:False 0.009996s/batch
+2024-11-19 17:39:22,558 [INFO ]  current_lr: 0.000014
+2024-11-19 17:39:23,664 [INFO ]  epoch:376 step:0000  l1_loss:0.008896 loss_sum:0.008896 aug:False 0.011051s/batch
+2024-11-19 17:40:40,155 [INFO ]  current_lr: 0.000014
+2024-11-19 17:40:41,209 [INFO ]  epoch:377 step:0000  l1_loss:0.009161 loss_sum:0.009161 aug:False 0.010536s/batch
+2024-11-19 17:41:57,690 [INFO ]  current_lr: 0.000014
+2024-11-19 17:41:58,763 [INFO ]  epoch:378 step:0000  l1_loss:0.009130 loss_sum:0.009130 aug:False 0.010725s/batch
+2024-11-19 17:43:15,275 [INFO ]  current_lr: 0.000014
+2024-11-19 17:43:16,344 [INFO ]  epoch:379 step:0000  l1_loss:0.009137 loss_sum:0.009137 aug:False 0.010680s/batch
+2024-11-19 17:44:32,796 [INFO ]  start testing...
+2024-11-19 17:44:32,796 [INFO ]  450 testing samples
+2024-11-19 17:44:42,489 [INFO ]  Mean: psnr:35.700675   ssim:0.937113 
+2024-11-19 17:44:42,490 [INFO ]  Std : psnr:1.839286   ssim:0.013971 
+2024-11-19 17:44:42,490 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 17:44:42,492 [INFO ]  current_lr: 0.000013
+2024-11-19 17:44:43,517 [INFO ]  epoch:380 step:0000  l1_loss:0.009289 loss_sum:0.009289 aug:False 0.010243s/batch
+2024-11-19 17:45:59,951 [INFO ]  current_lr: 0.000013
+2024-11-19 17:46:00,983 [INFO ]  epoch:381 step:0000  l1_loss:0.009309 loss_sum:0.009309 aug:False 0.010314s/batch
+2024-11-19 17:47:17,470 [INFO ]  current_lr: 0.000013
+2024-11-19 17:47:18,492 [INFO ]  epoch:382 step:0000  l1_loss:0.009113 loss_sum:0.009113 aug:False 0.010213s/batch
+2024-11-19 17:48:35,026 [INFO ]  current_lr: 0.000013
+2024-11-19 17:48:36,066 [INFO ]  epoch:383 step:0000  l1_loss:0.009042 loss_sum:0.009042 aug:False 0.010388s/batch
+2024-11-19 17:49:52,551 [INFO ]  current_lr: 0.000013
+2024-11-19 17:49:53,607 [INFO ]  epoch:384 step:0000  l1_loss:0.009580 loss_sum:0.009580 aug:False 0.010560s/batch
+2024-11-19 17:51:10,078 [INFO ]  current_lr: 0.000012
+2024-11-19 17:51:11,110 [INFO ]  epoch:385 step:0000  l1_loss:0.008675 loss_sum:0.008675 aug:False 0.010322s/batch
+2024-11-19 17:52:27,574 [INFO ]  current_lr: 0.000012
+2024-11-19 17:52:28,618 [INFO ]  epoch:386 step:0000  l1_loss:0.009027 loss_sum:0.009027 aug:False 0.010432s/batch
+2024-11-19 17:53:45,163 [INFO ]  current_lr: 0.000012
+2024-11-19 17:53:46,286 [INFO ]  epoch:387 step:0000  l1_loss:0.009262 loss_sum:0.009262 aug:False 0.011222s/batch
+2024-11-19 17:55:02,757 [INFO ]  current_lr: 0.000012
+2024-11-19 17:55:03,759 [INFO ]  epoch:388 step:0000  l1_loss:0.009177 loss_sum:0.009177 aug:False 0.010007s/batch
+2024-11-19 17:56:20,247 [INFO ]  current_lr: 0.000012
+2024-11-19 17:56:21,293 [INFO ]  epoch:389 step:0000  l1_loss:0.008997 loss_sum:0.008997 aug:False 0.010454s/batch
+2024-11-19 17:57:37,813 [INFO ]  start testing...
+2024-11-19 17:57:37,814 [INFO ]  450 testing samples
+2024-11-19 17:57:47,445 [INFO ]  Mean: psnr:35.684311   ssim:0.936990 
+2024-11-19 17:57:47,446 [INFO ]  Std : psnr:1.844983   ssim:0.014001 
+2024-11-19 17:57:47,446 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 17:57:47,449 [INFO ]  current_lr: 0.000011
+2024-11-19 17:57:48,492 [INFO ]  epoch:390 step:0000  l1_loss:0.009118 loss_sum:0.009118 aug:False 0.010427s/batch
+2024-11-19 17:59:04,959 [INFO ]  current_lr: 0.000011
+2024-11-19 17:59:06,016 [INFO ]  epoch:391 step:0000  l1_loss:0.008901 loss_sum:0.008901 aug:False 0.010559s/batch
+2024-11-19 18:00:22,488 [INFO ]  current_lr: 0.000011
+2024-11-19 18:00:23,487 [INFO ]  epoch:392 step:0000  l1_loss:0.009037 loss_sum:0.009037 aug:False 0.009986s/batch
+2024-11-19 18:01:39,980 [INFO ]  current_lr: 0.000011
+2024-11-19 18:01:40,981 [INFO ]  epoch:393 step:0000  l1_loss:0.008975 loss_sum:0.008975 aug:False 0.010009s/batch
+2024-11-19 18:02:57,488 [INFO ]  current_lr: 0.000011
+2024-11-19 18:02:58,508 [INFO ]  epoch:394 step:0000  l1_loss:0.009015 loss_sum:0.009015 aug:False 0.010192s/batch
+2024-11-19 18:04:14,997 [INFO ]  current_lr: 0.000010
+2024-11-19 18:04:16,017 [INFO ]  epoch:395 step:0000  l1_loss:0.009362 loss_sum:0.009362 aug:False 0.010193s/batch
+2024-11-19 18:05:32,503 [INFO ]  current_lr: 0.000010
+2024-11-19 18:05:33,625 [INFO ]  epoch:396 step:0000  l1_loss:0.009215 loss_sum:0.009215 aug:False 0.011219s/batch
+2024-11-19 18:06:50,131 [INFO ]  current_lr: 0.000010
+2024-11-19 18:06:51,175 [INFO ]  epoch:397 step:0000  l1_loss:0.008660 loss_sum:0.008660 aug:False 0.010437s/batch
+2024-11-19 18:08:07,700 [INFO ]  current_lr: 0.000010
+2024-11-19 18:08:08,708 [INFO ]  epoch:398 step:0000  l1_loss:0.009027 loss_sum:0.009027 aug:False 0.010077s/batch
+2024-11-19 18:09:25,220 [INFO ]  current_lr: 0.000010
+2024-11-19 18:09:26,285 [INFO ]  epoch:399 step:0000  l1_loss:0.009283 loss_sum:0.009283 aug:False 0.010643s/batch
+2024-11-19 18:10:42,778 [INFO ]  Saving state, epoch: 399 iter:0
+2024-11-19 18:10:45,647 [INFO ]  start testing...
+2024-11-19 18:10:45,647 [INFO ]  450 testing samples
+2024-11-19 18:10:55,294 [INFO ]  Mean: psnr:35.677355   ssim:0.936950 
+2024-11-19 18:10:55,295 [INFO ]  Std : psnr:1.843422   ssim:0.014010 
+2024-11-19 18:10:55,295 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 18:10:55,298 [INFO ]  current_lr: 0.000009
+2024-11-19 18:10:56,279 [INFO ]  epoch:400 step:0000  l1_loss:0.009099 loss_sum:0.009099 aug:False 0.009807s/batch
+2024-11-19 18:12:12,665 [INFO ]  current_lr: 0.000009
+2024-11-19 18:12:13,693 [INFO ]  epoch:401 step:0000  l1_loss:0.009410 loss_sum:0.009410 aug:False 0.010277s/batch
+2024-11-19 18:13:30,220 [INFO ]  current_lr: 0.000009
+2024-11-19 18:13:31,313 [INFO ]  epoch:402 step:0000  l1_loss:0.008991 loss_sum:0.008991 aug:False 0.010925s/batch
+2024-11-19 18:14:47,797 [INFO ]  current_lr: 0.000009
+2024-11-19 18:14:48,814 [INFO ]  epoch:403 step:0000  l1_loss:0.009117 loss_sum:0.009117 aug:False 0.010159s/batch
+2024-11-19 18:16:05,258 [INFO ]  current_lr: 0.000009
+2024-11-19 18:16:06,272 [INFO ]  epoch:404 step:0000  l1_loss:0.009186 loss_sum:0.009186 aug:False 0.010137s/batch
+2024-11-19 18:17:22,739 [INFO ]  current_lr: 0.000009
+2024-11-19 18:17:23,779 [INFO ]  epoch:405 step:0000  l1_loss:0.009790 loss_sum:0.009790 aug:False 0.010401s/batch
+2024-11-19 18:18:40,215 [INFO ]  current_lr: 0.000008
+2024-11-19 18:18:41,257 [INFO ]  epoch:406 step:0000  l1_loss:0.009354 loss_sum:0.009354 aug:False 0.010416s/batch
+2024-11-19 18:19:57,697 [INFO ]  current_lr: 0.000008
+2024-11-19 18:19:58,747 [INFO ]  epoch:407 step:0000  l1_loss:0.009145 loss_sum:0.009145 aug:False 0.010491s/batch
+2024-11-19 18:21:15,212 [INFO ]  current_lr: 0.000008
+2024-11-19 18:21:16,215 [INFO ]  epoch:408 step:0000  l1_loss:0.009048 loss_sum:0.009048 aug:False 0.010026s/batch
+2024-11-19 18:22:32,643 [INFO ]  current_lr: 0.000008
+2024-11-19 18:22:33,650 [INFO ]  epoch:409 step:0000  l1_loss:0.008899 loss_sum:0.008899 aug:False 0.010069s/batch
+2024-11-19 18:23:50,103 [INFO ]  start testing...
+2024-11-19 18:23:50,104 [INFO ]  450 testing samples
+2024-11-19 18:23:59,698 [INFO ]  Mean: psnr:35.661593   ssim:0.936839 
+2024-11-19 18:23:59,698 [INFO ]  Std : psnr:1.842538   ssim:0.014033 
+2024-11-19 18:23:59,699 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 18:23:59,701 [INFO ]  current_lr: 0.000008
+2024-11-19 18:24:00,684 [INFO ]  epoch:410 step:0000  l1_loss:0.009183 loss_sum:0.009183 aug:False 0.009826s/batch
+2024-11-19 18:25:17,140 [INFO ]  current_lr: 0.000008
+2024-11-19 18:25:18,200 [INFO ]  epoch:411 step:0000  l1_loss:0.009038 loss_sum:0.009038 aug:False 0.010597s/batch
+2024-11-19 18:26:34,685 [INFO ]  current_lr: 0.000007
+2024-11-19 18:26:35,684 [INFO ]  epoch:412 step:0000  l1_loss:0.009575 loss_sum:0.009575 aug:False 0.009987s/batch
+2024-11-19 18:27:52,237 [INFO ]  current_lr: 0.000007
+2024-11-19 18:27:53,291 [INFO ]  epoch:413 step:0000  l1_loss:0.009074 loss_sum:0.009074 aug:False 0.010533s/batch
+2024-11-19 18:29:09,799 [INFO ]  current_lr: 0.000007
+2024-11-19 18:29:10,801 [INFO ]  epoch:414 step:0000  l1_loss:0.009013 loss_sum:0.009013 aug:False 0.010018s/batch
+2024-11-19 18:30:27,309 [INFO ]  current_lr: 0.000007
+2024-11-19 18:30:28,351 [INFO ]  epoch:415 step:0000  l1_loss:0.009262 loss_sum:0.009262 aug:False 0.010415s/batch
+2024-11-19 18:31:44,845 [INFO ]  current_lr: 0.000007
+2024-11-19 18:31:45,858 [INFO ]  epoch:416 step:0000  l1_loss:0.009058 loss_sum:0.009058 aug:False 0.010134s/batch
+2024-11-19 18:33:02,385 [INFO ]  current_lr: 0.000007
+2024-11-19 18:33:03,406 [INFO ]  epoch:417 step:0000  l1_loss:0.009275 loss_sum:0.009275 aug:False 0.010207s/batch
+2024-11-19 18:34:19,862 [INFO ]  current_lr: 0.000006
+2024-11-19 18:34:20,884 [INFO ]  epoch:418 step:0000  l1_loss:0.009228 loss_sum:0.009228 aug:False 0.010223s/batch
+2024-11-19 18:35:37,396 [INFO ]  current_lr: 0.000006
+2024-11-19 18:35:38,375 [INFO ]  epoch:419 step:0000  l1_loss:0.009028 loss_sum:0.009028 aug:False 0.009782s/batch
+2024-11-19 18:36:54,909 [INFO ]  start testing...
+2024-11-19 18:36:54,910 [INFO ]  450 testing samples
+2024-11-19 18:37:04,660 [INFO ]  Mean: psnr:35.649946   ssim:0.936741 
+2024-11-19 18:37:04,661 [INFO ]  Std : psnr:1.841113   ssim:0.014056 
+2024-11-19 18:37:04,661 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 18:37:04,664 [INFO ]  current_lr: 0.000006
+2024-11-19 18:37:05,808 [INFO ]  epoch:420 step:0000  l1_loss:0.008944 loss_sum:0.008944 aug:False 0.011441s/batch
+2024-11-19 18:38:22,311 [INFO ]  current_lr: 0.000006
+2024-11-19 18:38:23,393 [INFO ]  epoch:421 step:0000  l1_loss:0.008911 loss_sum:0.008911 aug:False 0.010812s/batch
+2024-11-19 18:39:39,896 [INFO ]  current_lr: 0.000006
+2024-11-19 18:39:40,901 [INFO ]  epoch:422 step:0000  l1_loss:0.009239 loss_sum:0.009239 aug:False 0.010037s/batch
+2024-11-19 18:40:57,367 [INFO ]  current_lr: 0.000006
+2024-11-19 18:40:58,383 [INFO ]  epoch:423 step:0000  l1_loss:0.009115 loss_sum:0.009115 aug:False 0.010157s/batch
+2024-11-19 18:42:14,913 [INFO ]  current_lr: 0.000006
+2024-11-19 18:42:15,969 [INFO ]  epoch:424 step:0000  l1_loss:0.008751 loss_sum:0.008751 aug:False 0.010560s/batch
+2024-11-19 18:43:32,500 [INFO ]  current_lr: 0.000005
+2024-11-19 18:43:33,660 [INFO ]  epoch:425 step:0000  l1_loss:0.008632 loss_sum:0.008632 aug:False 0.011599s/batch
+2024-11-19 18:44:50,225 [INFO ]  current_lr: 0.000005
+2024-11-19 18:44:51,259 [INFO ]  epoch:426 step:0000  l1_loss:0.009126 loss_sum:0.009126 aug:False 0.010326s/batch
+2024-11-19 18:46:07,715 [INFO ]  current_lr: 0.000005
+2024-11-19 18:46:08,726 [INFO ]  epoch:427 step:0000  l1_loss:0.009166 loss_sum:0.009166 aug:False 0.010111s/batch
+2024-11-19 18:47:25,210 [INFO ]  current_lr: 0.000005
+2024-11-19 18:47:26,307 [INFO ]  epoch:428 step:0000  l1_loss:0.008743 loss_sum:0.008743 aug:False 0.010967s/batch
+2024-11-19 18:48:42,840 [INFO ]  current_lr: 0.000005
+2024-11-19 18:48:43,885 [INFO ]  epoch:429 step:0000  l1_loss:0.008656 loss_sum:0.008656 aug:False 0.010444s/batch
+2024-11-19 18:50:00,402 [INFO ]  start testing...
+2024-11-19 18:50:00,403 [INFO ]  450 testing samples
+2024-11-19 18:50:10,157 [INFO ]  Mean: psnr:35.646799   ssim:0.936724 
+2024-11-19 18:50:10,157 [INFO ]  Std : psnr:1.841559   ssim:0.014066 
+2024-11-19 18:50:10,157 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 18:50:10,160 [INFO ]  current_lr: 0.000005
+2024-11-19 18:50:11,159 [INFO ]  epoch:430 step:0000  l1_loss:0.009001 loss_sum:0.009001 aug:False 0.009983s/batch
+2024-11-19 18:51:27,616 [INFO ]  current_lr: 0.000005
+2024-11-19 18:51:28,626 [INFO ]  epoch:431 step:0000  l1_loss:0.009257 loss_sum:0.009257 aug:False 0.010101s/batch
+2024-11-19 18:52:45,183 [INFO ]  current_lr: 0.000004
+2024-11-19 18:52:46,260 [INFO ]  epoch:432 step:0000  l1_loss:0.008998 loss_sum:0.008998 aug:False 0.010761s/batch
+2024-11-19 18:54:02,771 [INFO ]  current_lr: 0.000004
+2024-11-19 18:54:03,825 [INFO ]  epoch:433 step:0000  l1_loss:0.009014 loss_sum:0.009014 aug:False 0.010529s/batch
+2024-11-19 18:55:20,337 [INFO ]  current_lr: 0.000004
+2024-11-19 18:55:21,384 [INFO ]  epoch:434 step:0000  l1_loss:0.008975 loss_sum:0.008975 aug:False 0.010462s/batch
+2024-11-19 18:56:37,880 [INFO ]  current_lr: 0.000004
+2024-11-19 18:56:38,917 [INFO ]  epoch:435 step:0000  l1_loss:0.008795 loss_sum:0.008795 aug:False 0.010355s/batch
+2024-11-19 18:57:55,437 [INFO ]  current_lr: 0.000004
+2024-11-19 18:57:56,451 [INFO ]  epoch:436 step:0000  l1_loss:0.009196 loss_sum:0.009196 aug:False 0.010132s/batch
+2024-11-19 18:59:12,964 [INFO ]  current_lr: 0.000004
+2024-11-19 18:59:14,039 [INFO ]  epoch:437 step:0000  l1_loss:0.009127 loss_sum:0.009127 aug:False 0.010744s/batch
+2024-11-19 19:00:30,569 [INFO ]  current_lr: 0.000004
+2024-11-19 19:00:31,588 [INFO ]  epoch:438 step:0000  l1_loss:0.008995 loss_sum:0.008995 aug:False 0.010183s/batch
+2024-11-19 19:01:48,067 [INFO ]  current_lr: 0.000004
+2024-11-19 19:01:49,090 [INFO ]  epoch:439 step:0000  l1_loss:0.009020 loss_sum:0.009020 aug:False 0.010224s/batch
+2024-11-19 19:03:05,597 [INFO ]  start testing...
+2024-11-19 19:03:05,597 [INFO ]  450 testing samples
+2024-11-19 19:03:15,249 [INFO ]  Mean: psnr:35.638075   ssim:0.936650 
+2024-11-19 19:03:15,250 [INFO ]  Std : psnr:1.840258   ssim:0.014074 
+2024-11-19 19:03:15,250 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 19:03:15,252 [INFO ]  current_lr: 0.000003
+2024-11-19 19:03:16,236 [INFO ]  epoch:440 step:0000  l1_loss:0.008726 loss_sum:0.008726 aug:False 0.009836s/batch
+2024-11-19 19:04:32,700 [INFO ]  current_lr: 0.000003
+2024-11-19 19:04:33,706 [INFO ]  epoch:441 step:0000  l1_loss:0.009150 loss_sum:0.009150 aug:False 0.010053s/batch
+2024-11-19 19:05:50,194 [INFO ]  current_lr: 0.000003
+2024-11-19 19:05:51,221 [INFO ]  epoch:442 step:0000  l1_loss:0.009054 loss_sum:0.009054 aug:False 0.010265s/batch
+2024-11-19 19:07:07,721 [INFO ]  current_lr: 0.000003
+2024-11-19 19:07:08,716 [INFO ]  epoch:443 step:0000  l1_loss:0.009146 loss_sum:0.009146 aug:False 0.009954s/batch
+2024-11-19 19:08:25,209 [INFO ]  current_lr: 0.000003
+2024-11-19 19:08:26,231 [INFO ]  epoch:444 step:0000  l1_loss:0.008963 loss_sum:0.008963 aug:False 0.010223s/batch
+2024-11-19 19:09:42,763 [INFO ]  current_lr: 0.000003
+2024-11-19 19:09:43,770 [INFO ]  epoch:445 step:0000  l1_loss:0.009297 loss_sum:0.009297 aug:False 0.010069s/batch
+2024-11-19 19:11:00,287 [INFO ]  current_lr: 0.000003
+2024-11-19 19:11:01,325 [INFO ]  epoch:446 step:0000  l1_loss:0.008914 loss_sum:0.008914 aug:False 0.010379s/batch
+2024-11-19 19:12:17,786 [INFO ]  current_lr: 0.000003
+2024-11-19 19:12:18,797 [INFO ]  epoch:447 step:0000  l1_loss:0.009404 loss_sum:0.009404 aug:False 0.010109s/batch
+2024-11-19 19:13:35,305 [INFO ]  current_lr: 0.000003
+2024-11-19 19:13:36,372 [INFO ]  epoch:448 step:0000  l1_loss:0.009235 loss_sum:0.009235 aug:False 0.010669s/batch
+2024-11-19 19:14:52,887 [INFO ]  current_lr: 0.000003
+2024-11-19 19:14:53,918 [INFO ]  epoch:449 step:0000  l1_loss:0.009268 loss_sum:0.009268 aug:False 0.010305s/batch
+2024-11-19 19:16:10,423 [INFO ]  Saving state, epoch: 449 iter:0
+2024-11-19 19:16:13,307 [INFO ]  start testing...
+2024-11-19 19:16:13,308 [INFO ]  450 testing samples
+2024-11-19 19:16:23,032 [INFO ]  Mean: psnr:35.634613   ssim:0.936614 
+2024-11-19 19:16:23,033 [INFO ]  Std : psnr:1.839062   ssim:0.014080 
+2024-11-19 19:16:23,033 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 19:16:23,035 [INFO ]  current_lr: 0.000002
+2024-11-19 19:16:24,063 [INFO ]  epoch:450 step:0000  l1_loss:0.008943 loss_sum:0.008943 aug:False 0.010274s/batch
+2024-11-19 19:17:40,419 [INFO ]  current_lr: 0.000002
+2024-11-19 19:17:41,502 [INFO ]  epoch:451 step:0000  l1_loss:0.009684 loss_sum:0.009684 aug:False 0.010816s/batch
+2024-11-19 19:18:57,969 [INFO ]  current_lr: 0.000002
+2024-11-19 19:18:59,036 [INFO ]  epoch:452 step:0000  l1_loss:0.009388 loss_sum:0.009388 aug:False 0.010666s/batch
+2024-11-19 19:20:15,512 [INFO ]  current_lr: 0.000002
+2024-11-19 19:20:16,517 [INFO ]  epoch:453 step:0000  l1_loss:0.008857 loss_sum:0.008857 aug:False 0.010039s/batch
+2024-11-19 19:21:33,010 [INFO ]  current_lr: 0.000002
+2024-11-19 19:21:34,070 [INFO ]  epoch:454 step:0000  l1_loss:0.009227 loss_sum:0.009227 aug:False 0.010592s/batch
+2024-11-19 19:22:50,548 [INFO ]  current_lr: 0.000002
+2024-11-19 19:22:51,588 [INFO ]  epoch:455 step:0000  l1_loss:0.009448 loss_sum:0.009448 aug:False 0.010394s/batch
+2024-11-19 19:24:08,065 [INFO ]  current_lr: 0.000002
+2024-11-19 19:24:09,165 [INFO ]  epoch:456 step:0000  l1_loss:0.009289 loss_sum:0.009289 aug:False 0.010997s/batch
+2024-11-19 19:25:25,687 [INFO ]  current_lr: 0.000002
+2024-11-19 19:25:26,729 [INFO ]  epoch:457 step:0000  l1_loss:0.009106 loss_sum:0.009106 aug:False 0.010413s/batch
+2024-11-19 19:26:43,223 [INFO ]  current_lr: 0.000002
+2024-11-19 19:26:44,242 [INFO ]  epoch:458 step:0000  l1_loss:0.009192 loss_sum:0.009192 aug:False 0.010185s/batch
+2024-11-19 19:28:00,743 [INFO ]  current_lr: 0.000002
+2024-11-19 19:28:01,765 [INFO ]  epoch:459 step:0000  l1_loss:0.009260 loss_sum:0.009260 aug:False 0.010207s/batch
+2024-11-19 19:29:18,256 [INFO ]  start testing...
+2024-11-19 19:29:18,257 [INFO ]  450 testing samples
+2024-11-19 19:29:27,909 [INFO ]  Mean: psnr:35.630203   ssim:0.936579 
+2024-11-19 19:29:27,910 [INFO ]  Std : psnr:1.839109   ssim:0.014088 
+2024-11-19 19:29:27,910 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 19:29:27,913 [INFO ]  current_lr: 0.000002
+2024-11-19 19:29:28,930 [INFO ]  epoch:460 step:0000  l1_loss:0.009277 loss_sum:0.009277 aug:False 0.010169s/batch
+2024-11-19 19:30:45,361 [INFO ]  current_lr: 0.000002
+2024-11-19 19:30:46,422 [INFO ]  epoch:461 step:0000  l1_loss:0.008891 loss_sum:0.008891 aug:False 0.010607s/batch
+2024-11-19 19:32:02,900 [INFO ]  current_lr: 0.000001
+2024-11-19 19:32:03,992 [INFO ]  epoch:462 step:0000  l1_loss:0.008806 loss_sum:0.008806 aug:False 0.010908s/batch
+2024-11-19 19:33:20,509 [INFO ]  current_lr: 0.000001
+2024-11-19 19:33:21,561 [INFO ]  epoch:463 step:0000  l1_loss:0.008985 loss_sum:0.008985 aug:False 0.010513s/batch
+2024-11-19 19:34:38,052 [INFO ]  current_lr: 0.000001
+2024-11-19 19:34:39,130 [INFO ]  epoch:464 step:0000  l1_loss:0.009168 loss_sum:0.009168 aug:False 0.010777s/batch
+2024-11-19 19:35:55,632 [INFO ]  current_lr: 0.000001
+2024-11-19 19:35:56,720 [INFO ]  epoch:465 step:0000  l1_loss:0.009061 loss_sum:0.009061 aug:False 0.010880s/batch
+2024-11-19 19:37:13,185 [INFO ]  current_lr: 0.000001
+2024-11-19 19:37:14,188 [INFO ]  epoch:466 step:0000  l1_loss:0.008963 loss_sum:0.008963 aug:False 0.010027s/batch
+2024-11-19 19:38:30,709 [INFO ]  current_lr: 0.000001
+2024-11-19 19:38:31,713 [INFO ]  epoch:467 step:0000  l1_loss:0.008886 loss_sum:0.008886 aug:False 0.010037s/batch
+2024-11-19 19:39:48,183 [INFO ]  current_lr: 0.000001
+2024-11-19 19:39:49,217 [INFO ]  epoch:468 step:0000  l1_loss:0.009061 loss_sum:0.009061 aug:False 0.010329s/batch
+2024-11-19 19:41:05,707 [INFO ]  current_lr: 0.000001
+2024-11-19 19:41:06,752 [INFO ]  epoch:469 step:0000  l1_loss:0.008766 loss_sum:0.008766 aug:False 0.010443s/batch
+2024-11-19 19:42:23,250 [INFO ]  start testing...
+2024-11-19 19:42:23,251 [INFO ]  450 testing samples
+2024-11-19 19:42:32,909 [INFO ]  Mean: psnr:35.629656   ssim:0.936576 
+2024-11-19 19:42:32,909 [INFO ]  Std : psnr:1.839133   ssim:0.014090 
+2024-11-19 19:42:32,909 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 19:42:32,912 [INFO ]  current_lr: 0.000001
+2024-11-19 19:42:33,992 [INFO ]  epoch:470 step:0000  l1_loss:0.009028 loss_sum:0.009028 aug:False 0.010794s/batch
+2024-11-19 19:43:50,466 [INFO ]  current_lr: 0.000001
+2024-11-19 19:43:51,510 [INFO ]  epoch:471 step:0000  l1_loss:0.009108 loss_sum:0.009108 aug:False 0.010436s/batch
+2024-11-19 19:45:08,009 [INFO ]  current_lr: 0.000001
+2024-11-19 19:45:09,046 [INFO ]  epoch:472 step:0000  l1_loss:0.009136 loss_sum:0.009136 aug:False 0.010369s/batch
+2024-11-19 19:46:25,552 [INFO ]  current_lr: 0.000001
+2024-11-19 19:46:26,577 [INFO ]  epoch:473 step:0000  l1_loss:0.008916 loss_sum:0.008916 aug:False 0.010240s/batch
+2024-11-19 19:47:43,065 [INFO ]  current_lr: 0.000001
+2024-11-19 19:47:44,099 [INFO ]  epoch:474 step:0000  l1_loss:0.009073 loss_sum:0.009073 aug:False 0.010327s/batch
+2024-11-19 19:49:00,575 [INFO ]  current_lr: 0.000001
+2024-11-19 19:49:01,643 [INFO ]  epoch:475 step:0000  l1_loss:0.008967 loss_sum:0.008967 aug:False 0.010671s/batch
+2024-11-19 19:50:18,105 [INFO ]  current_lr: 0.000001
+2024-11-19 19:50:19,137 [INFO ]  epoch:476 step:0000  l1_loss:0.009222 loss_sum:0.009222 aug:False 0.010308s/batch
+2024-11-19 19:51:35,608 [INFO ]  current_lr: 0.000001
+2024-11-19 19:51:36,648 [INFO ]  epoch:477 step:0000  l1_loss:0.009327 loss_sum:0.009327 aug:False 0.010402s/batch
+2024-11-19 19:52:53,145 [INFO ]  current_lr: 0.000001
+2024-11-19 19:52:54,198 [INFO ]  epoch:478 step:0000  l1_loss:0.009223 loss_sum:0.009223 aug:False 0.010528s/batch
+2024-11-19 19:54:10,673 [INFO ]  current_lr: 0.000000
+2024-11-19 19:54:11,704 [INFO ]  epoch:479 step:0000  l1_loss:0.009205 loss_sum:0.009205 aug:False 0.010299s/batch
+2024-11-19 19:55:28,208 [INFO ]  start testing...
+2024-11-19 19:55:28,209 [INFO ]  450 testing samples
+2024-11-19 19:55:37,873 [INFO ]  Mean: psnr:35.628883   ssim:0.936572 
+2024-11-19 19:55:37,873 [INFO ]  Std : psnr:1.838960   ssim:0.014091 
+2024-11-19 19:55:37,873 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 19:55:37,876 [INFO ]  current_lr: 0.000000
+2024-11-19 19:55:38,864 [INFO ]  epoch:480 step:0000  l1_loss:0.008722 loss_sum:0.008722 aug:False 0.009876s/batch
+2024-11-19 19:56:55,319 [INFO ]  current_lr: 0.000000
+2024-11-19 19:56:56,328 [INFO ]  epoch:481 step:0000  l1_loss:0.009184 loss_sum:0.009184 aug:False 0.010083s/batch
+2024-11-19 19:58:12,828 [INFO ]  current_lr: 0.000000
+2024-11-19 19:58:13,821 [INFO ]  epoch:482 step:0000  l1_loss:0.008958 loss_sum:0.008958 aug:False 0.009919s/batch
+2024-11-19 19:59:30,311 [INFO ]  current_lr: 0.000000
+2024-11-19 19:59:31,356 [INFO ]  epoch:483 step:0000  l1_loss:0.008879 loss_sum:0.008879 aug:False 0.010439s/batch
+2024-11-19 20:00:47,876 [INFO ]  current_lr: 0.000000
+2024-11-19 20:00:48,901 [INFO ]  epoch:484 step:0000  l1_loss:0.008836 loss_sum:0.008836 aug:False 0.010246s/batch
+2024-11-19 20:02:05,371 [INFO ]  current_lr: 0.000000
+2024-11-19 20:02:06,428 [INFO ]  epoch:485 step:0000  l1_loss:0.009221 loss_sum:0.009221 aug:False 0.010563s/batch
+2024-11-19 20:03:22,881 [INFO ]  current_lr: 0.000000
+2024-11-19 20:03:23,944 [INFO ]  epoch:486 step:0000  l1_loss:0.009240 loss_sum:0.009240 aug:False 0.010627s/batch
+2024-11-19 20:04:40,408 [INFO ]  current_lr: 0.000000
+2024-11-19 20:04:41,434 [INFO ]  epoch:487 step:0000  l1_loss:0.009006 loss_sum:0.009006 aug:False 0.010258s/batch
+2024-11-19 20:05:57,920 [INFO ]  current_lr: 0.000000
+2024-11-19 20:05:58,954 [INFO ]  epoch:488 step:0000  l1_loss:0.009337 loss_sum:0.009337 aug:False 0.010329s/batch
+2024-11-19 20:07:15,427 [INFO ]  current_lr: 0.000000
+2024-11-19 20:07:16,426 [INFO ]  epoch:489 step:0000  l1_loss:0.008771 loss_sum:0.008771 aug:False 0.009986s/batch
+2024-11-19 20:08:32,884 [INFO ]  start testing...
+2024-11-19 20:08:32,884 [INFO ]  450 testing samples
+2024-11-19 20:08:42,489 [INFO ]  Mean: psnr:35.628472   ssim:0.936574 
+2024-11-19 20:08:42,490 [INFO ]  Std : psnr:1.838987   ssim:0.014091 
+2024-11-19 20:08:42,490 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 20:08:42,493 [INFO ]  current_lr: 0.000000
+2024-11-19 20:08:43,611 [INFO ]  epoch:490 step:0000  l1_loss:0.009311 loss_sum:0.009311 aug:False 0.011180s/batch
+2024-11-19 20:10:00,091 [INFO ]  current_lr: 0.000000
+2024-11-19 20:10:01,089 [INFO ]  epoch:491 step:0000  l1_loss:0.009080 loss_sum:0.009080 aug:False 0.009973s/batch
+2024-11-19 20:11:17,570 [INFO ]  current_lr: 0.000000
+2024-11-19 20:11:18,617 [INFO ]  epoch:492 step:0000  l1_loss:0.009071 loss_sum:0.009071 aug:False 0.010459s/batch
+2024-11-19 20:12:35,140 [INFO ]  current_lr: 0.000000
+2024-11-19 20:12:36,247 [INFO ]  epoch:493 step:0000  l1_loss:0.009102 loss_sum:0.009102 aug:False 0.011068s/batch
+2024-11-19 20:13:52,785 [INFO ]  current_lr: 0.000000
+2024-11-19 20:13:53,919 [INFO ]  epoch:494 step:0000  l1_loss:0.009231 loss_sum:0.009231 aug:False 0.011332s/batch
+2024-11-19 20:15:10,445 [INFO ]  current_lr: 0.000000
+2024-11-19 20:15:11,445 [INFO ]  epoch:495 step:0000  l1_loss:0.009316 loss_sum:0.009316 aug:False 0.009986s/batch
+2024-11-19 20:16:27,987 [INFO ]  current_lr: 0.000000
+2024-11-19 20:16:29,086 [INFO ]  epoch:496 step:0000  l1_loss:0.009050 loss_sum:0.009050 aug:False 0.010983s/batch
+2024-11-19 20:17:45,626 [INFO ]  current_lr: 0.000000
+2024-11-19 20:17:46,651 [INFO ]  epoch:497 step:0000  l1_loss:0.009119 loss_sum:0.009119 aug:False 0.010240s/batch
+2024-11-19 20:19:03,117 [INFO ]  current_lr: 0.000000
+2024-11-19 20:19:04,129 [INFO ]  epoch:498 step:0000  l1_loss:0.009210 loss_sum:0.009210 aug:False 0.010109s/batch
+2024-11-19 20:20:20,620 [INFO ]  current_lr: 0.000000
+2024-11-19 20:20:21,723 [INFO ]  epoch:499 step:0000  l1_loss:0.009185 loss_sum:0.009185 aug:False 0.011023s/batch
+2024-11-19 20:21:38,234 [INFO ]  Saving state, epoch: 499 iter:0
+2024-11-19 20:21:41,134 [INFO ]  start testing...
+2024-11-19 20:21:41,134 [INFO ]  450 testing samples
+2024-11-19 20:21:50,889 [INFO ]  Mean: psnr:35.628153   ssim:0.936568 
+2024-11-19 20:21:50,889 [INFO ]  Std : psnr:1.838980   ssim:0.014092 
+2024-11-19 20:21:50,889 [INFO ]  best_psnr was:36.297149  at epoch: 19
+2024-11-19 20:21:51,661 [INFO ]  The training stage on M4Raw is over!!!
+2024-11-19 20:21:51,662 [INFO ]  best_psnr was:36.297149  at epoch: 19
